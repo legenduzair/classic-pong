@@ -16,8 +16,18 @@ const user = {
     y: canvas.height/2 - 150/2,
     width: 20,
     height: 150,
-    color: 'white'
+    color: 'white',
+    score: 0
 };
+
+const ai = {
+    x: canvas.width - (20+10),
+    y: canvas.height/2 - 150/2,
+    width: 20,
+    height: 150,
+    color: 'white',
+    score: 0
+}
 
 function drawBoard() {
     ctx.fillStyle = 'black';
@@ -34,10 +44,16 @@ function drawUserPaddle() {
     ctx.fillRect(user.x, user.y, user.width, user.height);
 }
 
+function drawAiPaddle() {
+    ctx.fillStyle = ai.color;
+    ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
+}
+
 function render () {
     drawBoard();
     drawNet();
     drawUserPaddle();
+    drawAiPaddle();
 }
 
 render();
