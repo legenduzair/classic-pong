@@ -7,7 +7,7 @@ const net = {
     x: canvas.width/2 - 6/2,
     y: 0,
     width: 6,
-    height: canvas.width,
+    height: canvas.height,
     color: 'white'
 };
 
