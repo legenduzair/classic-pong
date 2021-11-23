@@ -29,6 +29,13 @@ const ai = {
     score: 0
 }
 
+const ball = {
+    x: canvas.width/2,
+    y: canvas.height/2,
+    radius: 10,
+    color: 'red',
+}
+
 function drawBoard() {
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -49,11 +56,17 @@ function drawAiPaddle() {
     ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
 }
 
+function drawBall() {
+    ctx.fillStyle = ball.color;
+    ctx.fillRect(ball.x, ball.y, ball.radius);
+}
+
 function render () {
     drawBoard();
     drawNet();
     drawUserPaddle();
     drawAiPaddle();
+    drawBall();
 }
 
 render();
