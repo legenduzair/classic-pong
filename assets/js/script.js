@@ -56,17 +56,18 @@ function drawAiPaddle(x, y, width, height, color) {
     ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
 }
 
-function drawBall() {
-    ctx.fillStyle = ball.color;
-    ctx.fillRect(ball.x, ball.y, ball.radius);
+function drawUserScore(x, y, score) {
+    ctx.fillStyle = 'white';
+    ctx.font = '40px Press Start 2P';
+    ctx.fillText(score, x, y);
 }
 
-function render () {
+function render() {
     drawBoard();
     drawNet();
     drawUserPaddle(user.x, user.y, user.width, user.height, user.color);
     drawAiPaddle(ai.x, ai.y, ai.width, ai.height, ai.color);
-    drawBall();
+    drawUserScore(canvas.width/4, canvas.height/6, user.score);
 }
 
 render();
