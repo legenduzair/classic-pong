@@ -46,12 +46,12 @@ function drawNet() {
     ctx.fillRect(net.x, net.y, net.width, net.height)
 }
 
-function drawUserPaddle() {
+function drawUserPaddle(x, y, width, height, color) {
     ctx.fillStyle = user.color;
     ctx.fillRect(user.x, user.y, user.width, user.height);
 }
 
-function drawAiPaddle() {
+function drawAiPaddle(x, y, width, height, color) {
     ctx.fillStyle = ai.color;
     ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
 }
@@ -64,8 +64,8 @@ function drawBall() {
 function render () {
     drawBoard();
     drawNet();
-    drawUserPaddle();
-    drawAiPaddle();
+    drawUserPaddle(user.x, user.y, user.width, user.height, user.color);
+    drawAiPaddle(ai.x, ai.y, ai.width, ai.height, ai.color);
     drawBall();
 }
 
