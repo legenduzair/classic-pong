@@ -32,7 +32,10 @@ const ai = {
 const ball = {
     x: canvas.width/2,
     y: canvas.height/2,
-    radius: 10,
+    radius: 15,
+    speed: 5,
+    velocityX: 5,
+    velocityY: 5,
     color: 'red',
 }
 
@@ -68,6 +71,14 @@ function drawAiScore(x, y, score) {
     ctx.fillText(score, x, y);
 }
 
+function drawBall(x, y, radius, color) {
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI*2, true);
+    ctx.closePath();
+    ctx.fill();
+}
+
 function render() {
     drawBoard();
     drawNet();
@@ -75,6 +86,7 @@ function render() {
     drawAiPaddle();
     drawUserScore(canvas.width/4, canvas.height/10, user.score);
     drawAiScore(3*canvas.width/4, canvas.height/10, ai.score);
+    drawBall(ball.x, ball.y, ball.radius, ball.color);
 }
 
 render();
