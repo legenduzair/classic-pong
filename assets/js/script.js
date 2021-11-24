@@ -101,6 +101,7 @@ function render() {
     drawBall(ball.x, ball.y, ball.radius, ball.color);
 }
 
+// Calls gameLoop function 60 times per 1000ms (1 second)
 function gameLoop() {
     render();
 }
