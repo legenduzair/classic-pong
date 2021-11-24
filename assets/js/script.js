@@ -101,4 +101,9 @@ function render() {
     drawBall(ball.x, ball.y, ball.radius, ball.color);
 }
 
-render();
+function gameLoop() {
+    render();
+}
+
+let framePerSecond = 60;
+setInterval(gameLoop, 1000/framePerSecond);
