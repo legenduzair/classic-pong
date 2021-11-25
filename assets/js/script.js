@@ -93,8 +93,8 @@ function drawBall(x, y, radius, color) {
 function update() {
 
 // To move the ball along x and y axis
-    ball.x += velocityX;
-    ball.y += velocityY; 
+    ball.x += ball.velocityX;
+    ball.y += ball.velocityY; 
 }
 
 // Function to render all drawn objects
