@@ -90,6 +90,13 @@ function drawBall(x, y, radius, color) {
     ctx.fill();
 }
 
+function update() {
+
+// To move the ball along x and y axis
+    ball.x += velocityX;
+    ball.y += velocityY; 
+}
+
 // Function to render all drawn objects
 function render() {
     drawBoard();
@@ -104,6 +111,7 @@ function render() {
 // Calls gameLoop function 60 times per 1000ms (1 second)
 function gameLoop() {
     render();
+    update();
 }
 
 let framePerSecond = 60;
