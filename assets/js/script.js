@@ -90,8 +90,14 @@ function drawBall(x, y, radius, color) {
     ctx.fill();
 }
 
+/* Paddle Movement */
+// Event listener for when pressing and releasing movement keys
+canvas.addEventListener('keydown', keyDownHandler);
+canvas.addEventListener('keyup', keyUpHandler);
+
 function update() {
 
+// To move the User and AI paddles
 // To move the ball along x and y axis
     ball.x += ball.velocityX;
     ball.y += ball.velocityY; 
