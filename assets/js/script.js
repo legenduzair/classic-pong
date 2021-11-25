@@ -96,8 +96,8 @@ function drawBall(x, y, radius, color) {
 
 /* Paddle Movement */
 // Event listener for when pressing and releasing movement keys
-canvas.addEventListener('keydown', keyDownHandler);
-canvas.addEventListener('keyup', keyUpHandler);
+window.addEventListener('keydown', keyDownHandler);
+window.addEventListener('keyup', keyUpHandler);
 
 // Function to activate when arrow keys are pressed
 function keyDownHandler(event) {
@@ -126,6 +126,11 @@ function keyUpHandler(event) {
 function update() {
 
 // To move the User and AI paddles
+if (upArrowKey && user.y > 0) {
+    user.y -= 9;
+} else if (downArrowKey && (user.y < canvas.height - user.height)) {
+    user.y += 9;
+}
 // To move the ball along x and y axis
     ball.x += ball.velocityX;
     ball.y += ball.velocityY; 
