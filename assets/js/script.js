@@ -100,7 +100,7 @@ canvas.addEventListener('keydown', keyDownHandler);
 canvas.addEventListener('keyup', keyUpHandler);
 
 // Function to activate when arrow keys are pressed
-function keyDownHandler() {
+function keyDownHandler(event) {
     // Acquire the keyCode for both up and down arrow keys
     switch (event.keyCode) {
         case 38:
@@ -113,7 +113,7 @@ function keyDownHandler() {
 }
 
 // Function to activate when arrow keys are released
-function keyUpHandler() {
+function keyUpHandler(event) {
     switch (event.keyCode) {
         case 38:
             upArrowKey = false;
