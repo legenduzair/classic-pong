@@ -2,6 +2,10 @@
 const canvas = document.getElementById("pong");
 const ctx = canvas.getContext("2d");
 
+// Movement keys variables
+let upArrowKey = false;
+let downArrowKey = false;
+
 /* Game Objects */
 // Net Variable
 const net = {
@@ -95,6 +99,18 @@ function drawBall(x, y, radius, color) {
 canvas.addEventListener('keydown', keyDownHandler);
 canvas.addEventListener('keyup', keyUpHandler);
 
+// Function to activate when arrow keys are pressed
+function keyDownHandler() {
+    // Acquire the keyCode for up arrow key
+    switch (event.keyCode) {
+        case 38:
+            upArrowKey = true;
+            break;
+        case 40:
+            downArrowKey = true;
+            break;
+    }
+}
 function update() {
 
 // To move the User and AI paddles
