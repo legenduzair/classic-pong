@@ -123,6 +123,8 @@ function keyUpHandler(event) {
             break;
     }
 }
+
+// Function that includes all of the calculations created to operate the game 
 function update() {
 
 // To move the user paddle
