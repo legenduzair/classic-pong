@@ -125,12 +125,18 @@ function keyUpHandler(event) {
 }
 function update() {
 
-// To move the User and AI paddles
+// To move the user paddle
+let userSpeed = 9;
 if (upArrowKey && user.y > 0) {
-    user.y -= 9;
+    user.y -= userSpeed;
 } else if (downArrowKey && (user.y < canvas.height - user.height)) {
-    user.y += 9;
+    user.y += userSpeed;
 }
+
+// To move the AI paddle
+let aiSpeed = 0.5;
+ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
+
 // To move the ball along x and y axis
     ball.x += ball.velocityX;
     ball.y += ball.velocityY; 
