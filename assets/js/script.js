@@ -143,10 +143,18 @@ ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
     ball.x += ball.velocityX;
     ball.y += ball.velocityY; 
 
-// To check if the ball collides with the top and bottom walls
+// To operate collision of the ball with the top and bottom walls
 if(ball.y + ball.radius >= canvas.height || ball.y - ball.radius <= 0) {
     ball.velocityY = -ball.velocityY;
 }
+
+// To operate collision of the ball with the right wall
+if(ball.x + ball.radius >= canvas.width) {
+    // User scores one point
+    user.score += 1;
+} else if(ball.x - ball.radius <= 0)
+    // AI scores one point
+    ai.score += 1;
 }
 // Function to render all drawn objects
 function render() {
