@@ -168,7 +168,6 @@ function resetBall() {
     ball.y = canvas.height/2;
     ball.speed = 5;
 // When the ball is reset, the direction of ball changes
-    ball.velocityY = -ball.velocityY;
     ball.velocityX = -ball.velocityX;
 }
 // Function to render all drawn objects
