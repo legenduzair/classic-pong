@@ -150,12 +150,26 @@ if(ball.y + ball.radius >= canvas.height || ball.y - ball.radius <= 0) {
 
 // To operate collision of the ball with the right wall
 if(ball.x + ball.radius >= canvas.width) {
-    // User scores one point
-    user.score += 1;
+    // User scores one point and ball resets
+    user.score++;
+    resetBall();
 // To operate collision of the ball with the left wall
-} else if(ball.x - ball.radius <= 0)
-    // AI scores one point
-    ai.score += 1;
+} else if(ball.x - ball.radius <= 0) {
+    // AI scores one point and ball resets
+    ai.score++;
+    resetBall();
+}
+}
+
+// Function to reset ball to center of the canvas
+function resetBall() {
+// Resets the ball to its original position and speed
+    ball.x = canvas.width/2;
+    ball.y = canvas.height/2;
+    ball.speed = 5;
+// When the ball is reset, the direction of ball changes
+    ball.velocityY = -ball.velocityY;
+    ball.velocityX = -ball.velocityX;
 }
 // Function to render all drawn objects
 function render() {
