@@ -152,6 +152,7 @@ if(ball.y + ball.radius >= canvas.height || ball.y - ball.radius <= 0) {
 if(ball.x + ball.radius >= canvas.width) {
     // User scores one point
     user.score += 1;
+// To operate collision of the ball with the left wall
 } else if(ball.x - ball.radius <= 0)
     // AI scores one point
     ai.score += 1;
