@@ -142,8 +142,12 @@ ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
 // To move the ball along x and y axis
     ball.x += ball.velocityX;
     ball.y += ball.velocityY; 
-}
 
+// To check if the ball collides with the top and bottom walls
+if(ball.y + ball.radius >= canvas.height || ball.y - ball.radius <= 0) {
+    ball.velocityY = -ball.velocityY;
+}
+}
 // Function to render all drawn objects
 function render() {
     drawBoard();
