@@ -174,8 +174,14 @@ if(ball.y < (player.y + player.height/2)) {
 // Then it will deflect off the paddle with an angle of 45 degrees (PI/4)
     angle = Math.PI/4;
 }
-// Declared direction variable to determine which direction the ball will move
-let direction = (ball.x < canvas.width/2) ? 1 : -1;
+// Declared direction variable to determine the velocity of the ball along the x axis depending on which player (user or ai) collides with it
+let direction = player === user ? 1 : -1;
+// Changes velocity of the ball along the X axis using the direction variable
+ball.velocityX = direction * ball.speed * Math.cos(angle);
+// Changes velocity of the ball along the Y axis
+ball.velocityY = ball.speed * Math.sin(angle);
+// Ball speed increases everytime the ball collides with the player
+ball.speed += 0.1;
 }
 }
 
