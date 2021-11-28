@@ -34,7 +34,7 @@ const ai = {
     height: 150,
     color: 'white',
     score: 0
-}
+};
 
 // Ball Variable
 const ball = {
@@ -45,7 +45,7 @@ const ball = {
     velocityX: 5,
     velocityY: 5,
     color: 'red',
-}
+};
 
 // Function used to input the game board
 function drawBoard() {
@@ -56,7 +56,7 @@ function drawBoard() {
 // Function used to input the center net
 function drawNet() {
     ctx.fillStyle = net.color;
-    ctx.fillRect(net.x, net.y, net.width, net.height)
+    ctx.fillRect(net.x, net.y, net.width, net.height);
 }
 
 // Function used to input the user paddle
@@ -201,12 +201,12 @@ function collisionDetection(ball, player){
     player.top = player.y;
     player.bottom = player.y + player.height;
     player.right = player.x + player.width;
-    player.left = player.x
+    player.left = player.x;
 // Sets the top, bottom, right and left positions of the ball
     ball.top = ball.y - ball.radius;
     ball.bottom = ball.y + ball.radius;
     ball.right = ball.x + ball.radius;
-    ball.left - ball.x - ball.radius;
+    ball.left = ball.x - ball.radius;
 // Combines both to generate a return statement to be true, if not false
     return ball.top < player.bottom && ball.bottom > player.top && ball.right > player.left && ball.left < player.right;
 }
