@@ -41,7 +41,7 @@ const ball = {
     x: canvas.width/2,
     y: canvas.height/2,
     radius: 15,
-    speed: 5,
+    speed: 7,
     velocityX: 5,
     velocityY: 5,
     color: 'red',
@@ -136,7 +136,7 @@ if (upArrowKey && user.y > 0) {
 }
 
 // To move the AI paddle
-let aiSpeed = 0.5;
+let aiSpeed = 0.09;
 ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
 
 // To move the ball along x and y axis
@@ -181,7 +181,7 @@ ball.velocityX = direction * ball.speed * Math.cos(angle);
 // Changes velocity of the ball along the Y axis
 ball.velocityY = ball.speed * Math.sin(angle);
 // Ball speed increases everytime the ball collides with the player
-ball.speed += 0.1;
+ball.speed += 0.2;
 }
 }
 
