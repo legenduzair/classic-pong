@@ -163,7 +163,17 @@ if(ball.x + ball.radius >= canvas.width) {
 // To determine whether the player is the user or ai
 let player = (ball.x < canvas.width/2) ? user : ai;
 if (collisionDetection(ball, player)) {
-    
+// Default angle of deflected ball is 0 degrees
+let angle = 0;
+// If the ball hits the top half of the paddle
+if(ball.y < (player.y + player.height/2)) {
+// Then it will deflect off the paddle with an angle of -45 degrees (-1* PI/4)
+    angle = -1 * Math.PI/4;
+// If the ball hits the bottom half of the paddle
+} else if(ball.y > (player.y + player.height/2)) {
+// Then it will deflect off the paddle with an angle of 45 degrees (1* PI/4)
+    angle = 1 * Math.PI/4;
+}
 }
 }
 
