@@ -159,6 +159,12 @@ if(ball.x + ball.radius >= canvas.width) {
     ai.score++;
     resetBall();
 }
+
+// To determine whether the player is the user or ai
+let player = (ball.x < canvas.width/2) ? user : ai;
+if (collisionDetection(ball, player)) {
+    
+}
 }
 
 // Function to reset ball to center of the canvas
