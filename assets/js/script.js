@@ -170,6 +170,22 @@ function resetBall() {
 // When the ball is reset, the direction of ball changes
     ball.velocityX = -ball.velocityX;
 }
+
+// Function to detect collision of ball with user and ai paddles
+function collisionDetection(ball, player){
+// Sets the top, bottom, right and left positions of paddles
+    player.top = player.y;
+    player.bottom = player.y + player.height;
+    player.right = player.x + player.width;
+    player.left = player.x
+// Sets the top, bottom, right and left positions of the ball
+    ball.top = ball.y - ball.radius;
+    ball.bottom = ball.y + ball.radius;
+    ball.right = ball.x + ball.radius;
+    ball.left - ball.x - ball.radius;
+// Combines both to generate a return statement to be true, if not false
+    return ball.top < player.bottom && ball.bottom > player.top && ball.right > player.left && ball.left < player.right;
+}
 // Function to render all drawn objects
 function render() {
     drawBoard();
