@@ -175,6 +175,7 @@ if(ball.y < (player.y + player.height/2)) {
     angle = Math.PI/4;
 }
 // Declared direction variable to determine the velocity of the ball along the x axis depending on which player (user or ai) collides with it
+// If user collides with the ball, the velocity is positive (1) but if the ai collides with the ball, the velocity is negative (-1)
 let direction = player === user ? 1 : -1;
 // Changes velocity of the ball along the X axis using the direction variable
 ball.velocityX = direction * ball.speed * Math.cos(angle);
