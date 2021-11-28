@@ -171,8 +171,8 @@ if(ball.y < (player.y + player.height/2)) {
     angle = -1 * Math.PI/4;
 // If the ball hits the bottom half of the paddle
 } else if(ball.y > (player.y + player.height/2)) {
-// Then it will deflect off the paddle with an angle of 45 degrees (1* PI/4)
-    angle = 1 * Math.PI/4;
+// Then it will deflect off the paddle with an angle of 45 degrees (PI/4)
+    angle = Math.PI/4;
 }
 }
 }
