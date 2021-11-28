@@ -174,6 +174,8 @@ if(ball.y < (player.y + player.height/2)) {
 // Then it will deflect off the paddle with an angle of 45 degrees (PI/4)
     angle = Math.PI/4;
 }
+// Declared direction variable to determine which direction the ball will move
+let direction = (ball.x < canvas.width/2) ? 1 : -1;
 }
 }
 
