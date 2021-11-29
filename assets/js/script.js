@@ -13,7 +13,7 @@ const net = {
     y: 0,
     width: 6,
     height: canvas.height,
-    color: 'white'
+    color: '#F3F8F2'
 };
 
 // User Paddle Variable
@@ -22,7 +22,7 @@ const user = {
     y: canvas.height/2 - 150/2,
     width: 20,
     height: 150,
-    color: 'white',
+    color: '#F3F8F2',
     score: 0
 };
 
@@ -32,7 +32,7 @@ const ai = {
     y: canvas.height/2 - 150/2,
     width: 20,
     height: 150,
-    color: 'white',
+    color: '#F3F8F2',
     score: 0
 };
 
@@ -44,12 +44,12 @@ const ball = {
     speed: 7,
     velocityX: 5,
     velocityY: 5,
-    color: 'red',
+    color: '#A4243B',
 };
 
 // Function used to input the game board
 function drawBoard() {
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = '#0B0500';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
@@ -73,14 +73,14 @@ function drawAiPaddle() {
 
 // Function used to input the user score
 function drawUserScore(x, y, score) {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = '#F3F8F2';
     ctx.font = '50px fantasy';
     ctx.fillText(score, x, y);
 }
 
 // Function used to input AI score
 function drawAiScore(x, y, score) {
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = '#F3F8F2';
     ctx.font = '50px fantasy';
     ctx.fillText(score, x, y);
 }
