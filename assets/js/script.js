@@ -191,7 +191,7 @@ function resetBall() {
 // Resets the ball to its original position and speed
     ball.x = canvas.width/2;
     ball.y = canvas.height/2;
-    ball.speed = 5;
+    ball.speed = 7;
 // When the ball is reset, the direction of ball changes
     ball.velocityX = -ball.velocityX;
 }
