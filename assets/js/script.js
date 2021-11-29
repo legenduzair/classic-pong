@@ -194,6 +194,7 @@ function resetBall() {
     ball.speed = 7;
 // When the ball is reset, the direction of ball changes
     ball.velocityX = -ball.velocityX;
+    ball.velocityY = -ball.velocityY;
 }
 
 // Function to detect collision of ball with user and ai paddles
