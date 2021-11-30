@@ -4,6 +4,7 @@ const ctx = canvas.getContext("2d");
 const headingSection = document.getElementById('title-screen');
 const gameArea = document.getElementById('pong');
 const buttonSection = document.getElementById('button-section');
+const button = document.getElementById('button');
 
 // Movement keys variables
 let upArrowKey = false;
@@ -232,5 +233,12 @@ function gameLoop() {
     update();
 }
 
+function showHide(target) {
+    if(target.classList.contains('hide')) {
+        target.classList.remove('hide')
+    } else {
+        target.classList.add('hide')
+    }
+}
 let framePerSecond = 60;
 setInterval(gameLoop, 1000/framePerSecond);
