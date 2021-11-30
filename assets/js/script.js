@@ -9,6 +9,7 @@ const homeSection = document.getElementById('home-button');
 const home = document.getElementById('home');
 const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
+const buttonTwo = document.getElementById('button-two');
 const highScore = 3;
 
 // Movement keys variables
@@ -233,6 +234,10 @@ function gameOver() {
     gameFinish.style.display = 'block';
     playAgain.style.display = 'block';
     homeSection.style.display = 'none';
+
+    resetBall();
+    user.score = 0;
+    ai.score = 0;
 }
 
 // Function to render all drawn objects
@@ -258,7 +263,17 @@ button.addEventListener('click', () => {
     showHide(headingSection);
     showHide(buttonSection);
     showHide(homeSection);
+})
+
+buttonTwo.addEventListener('click', () => {
+    gameArea.style.display = 'block';
+    gameFinish.style.display = 'none';
+    playAgain.style.display = 'none';
+    homeSection.style.display = 'block';
+
     resetBall();
+    user.score = 0;
+    ai.score = 0;
 })
 
 function showHide(target) {

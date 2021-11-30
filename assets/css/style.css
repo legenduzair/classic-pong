@@ -70,6 +70,21 @@ canvas {
     display: none;
 } */
 
+#button-two {
+    padding: 20px 10px;
+    background-color: #A4243B;
+    border: none;
+    color: #183642;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#button-two:hover {
+    color: #F3F8F2;
+}
+
 .hide {
     display: none;
 }
