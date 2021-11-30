@@ -5,6 +5,8 @@ const headingSection = document.getElementById('title-screen');
 const gameArea = document.getElementById('pong');
 const buttonSection = document.getElementById('button-section');
 const button = document.getElementById('button');
+const homeSection = document.getElementById('home-button');
+const home = document.getElementById('home');
 
 // Movement keys variables
 let upArrowKey = false;
@@ -237,6 +239,7 @@ button.addEventListener('click', () => {
     showHide(gameArea);
     showHide(headingSection);
     showHide(buttonSection);
+    showHide(homeSection);
     resetBall();
 })
 
@@ -247,5 +250,6 @@ function showHide(target) {
         target.classList.add('hide')
     }
 }
+
 let framePerSecond = 60;
 setInterval(gameLoop, 1000/framePerSecond);
