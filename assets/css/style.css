@@ -11,13 +11,13 @@ body {
     font-size: 2rem;
     height: 250px;
     margin: 100px;
-    display: none;
+    /* display: none; */
 }
 
 /* Button */
 #button-section {
     height: 100px;
-    display: none;
+    /* display: none; */
 }
 #button {
     padding: 20px 10px;
@@ -55,3 +55,6 @@ canvas {
     display: none;
 }
 
+.hide {
+    display: none;
+}
