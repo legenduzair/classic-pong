@@ -35,6 +35,16 @@ body {
 }
 
 /* Main Game Board */
+#main-menu {
+    padding: 20px 10px;
+    background-color: #A4243B;
+    border: none;
+    color: #183642;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+}
 #main-game {
     height: 98vh;
     /* width: 100vw; */
