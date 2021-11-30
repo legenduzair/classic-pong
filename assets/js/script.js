@@ -7,6 +7,9 @@ const buttonSection = document.getElementById('button-section');
 const button = document.getElementById('button');
 const homeSection = document.getElementById('home-button');
 const home = document.getElementById('home');
+const gameFinish = document.getElementById('game-over');
+const playAgain = document.getElementById('play-again');
+const highScore = 3;
 
 // Movement keys variables
 let upArrowKey = false;
@@ -218,6 +221,20 @@ function collisionDetection(ball, player){
 // Combines both to generate a return statement to be true, if not false
     return ball.top < player.bottom && ball.bottom > player.top && ball.right > player.left && ball.left < player.right;
 }
+
+function checkScore() {
+    if(user.score == highScore || ai.score == highScore) {
+        gameOver();
+    }
+}
+
+function gameOver() {
+    gameArea.style.display = 'none';
+    gameFinish.style.display = 'block';
+    playAgain.style.display = 'block';
+    homeSection.style.display = 'none';
+}
+
 // Function to render all drawn objects
 function render() {
     drawBoard();
@@ -233,6 +250,7 @@ function render() {
 function gameLoop() {
     render();
     update();
+    checkScore();
 }
 
 button.addEventListener('click', () => {
