@@ -237,6 +237,7 @@ button.addEventListener('click', () => {
     showHide(gameArea);
     showHide(headingSection);
     showHide(buttonSection);
+    resetBall();
 })
 
 function showHide(target) {
