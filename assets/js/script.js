@@ -1,6 +1,9 @@
 // Canvas Variable
 const canvas = document.getElementById("pong");
 const ctx = canvas.getContext("2d");
+const headingSection = document.getElementById('title-screen');
+const gameArea = document.getElementById('pong');
+const buttonSection = document.getElementById('button-section');
 
 // Movement keys variables
 let upArrowKey = false;
