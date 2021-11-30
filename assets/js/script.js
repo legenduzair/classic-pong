@@ -233,6 +233,12 @@ function gameLoop() {
     update();
 }
 
+button.addEventListener('click', () => {
+    showHide(gameArea);
+    showHide(headingSection);
+    showHide(buttonSection);
+})
+
 function showHide(target) {
     if(target.classList.contains('hide')) {
         target.classList.remove('hide')
