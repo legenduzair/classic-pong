@@ -35,7 +35,7 @@ body {
 }
 
 /* Main Game Board */
-#main-menu {
+#home {
     padding: 20px 10px;
     background-color: #A4243B;
     border: none;
@@ -45,6 +45,11 @@ body {
     text-decoration: none;
     display: inline-block;
 }
+
+#home:hover {
+    color: #F3F8F2;
+}
+
 #main-game {
     height: 98vh;
     /* width: 100vw; */
