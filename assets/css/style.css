@@ -65,10 +65,10 @@ canvas {
     border: solid 1px #F3F8F2;
 }
 
-/* End Game Message */
+/* End Game Message
 #endgame-message {
     display: none;
-}
+} */
 
 .hide {
     display: none;
