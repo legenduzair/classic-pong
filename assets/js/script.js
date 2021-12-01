@@ -1,6 +1,7 @@
 // Canvas Variable
 const canvas = document.getElementById("pong");
 const ctx = canvas.getContext("2d");
+const mainGame = document.getElementById('main-game');
 const headingSection = document.getElementById('title-screen');
 const gameArea = document.getElementById('pong');
 const buttonSection = document.getElementById('button-section');
@@ -207,6 +208,15 @@ function resetBall() {
     ball.velocityY = -ball.velocityY;
 }
 
+function resetGame() {
+    resetBall();
+    user.score = 0;
+    ai.score = 0;
+    user.x = 10;
+    user.y = canvas.height/2 - 150/2;
+    ai.x = canvas.width - (20+10);
+    ai.y = canvas.height/2 - 150/2;
+}
 // Function to detect collision of ball with user and ai paddles
 function collisionDetection(ball, player){
 // Sets the top, bottom, right and left positions of paddles
@@ -234,10 +244,9 @@ function gameOver() {
     gameFinish.style.display = 'block';
     playAgain.style.display = 'block';
     homeSection.style.display = 'none';
-
-    resetBall();
-    user.score = 0;
-    ai.score = 0;
+    mainGame.style.display = 'none';
+    
+    resetGame();
 }
 
 // Function to render all drawn objects
@@ -263,6 +272,8 @@ button.addEventListener('click', () => {
     showHide(headingSection);
     showHide(buttonSection);
     showHide(homeSection);
+    
+    resetGame();
 })
 
 buttonTwo.addEventListener('click', () => {
@@ -270,10 +281,9 @@ buttonTwo.addEventListener('click', () => {
     gameFinish.style.display = 'none';
     playAgain.style.display = 'none';
     homeSection.style.display = 'block';
+    mainGame.style.display = 'flex';
 
-    resetBall();
-    user.score = 0;
-    ai.score = 0;
+    resetGame();
 })
 
 function showHide(target) {
