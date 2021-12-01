@@ -270,6 +270,7 @@ button.addEventListener('click', () => {
     showHide(headingSection);
     showHide(buttonSection);
     showHide(homeSection);
+    mainGame.style.display = 'flex';
     
     gameLoopInterval = setInterval(gameLoop, 1000/framePerSecond);
     resetGame();
