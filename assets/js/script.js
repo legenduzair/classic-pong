@@ -241,10 +241,10 @@ function checkScore() {
 
 function gameOver() {
     gameArea.style.display = 'none';
-    gameFinish.style.display = 'block';
-    playAgain.style.display = 'block';
     homeSection.style.display = 'none';
     mainGame.style.display = 'none';
+    showHide(gameFinish);
+    showHide(playAgain);
     
     resetGame();
 }
