@@ -243,10 +243,8 @@ function gameOver() {
     gameArea.style.display = 'none';
     homeSection.style.display = 'none';
     mainGame.style.display = 'none';
-    showHide(gameFinish);
-    showHide(playAgain);
-    
-    resetGame();
+    gameFinish.style.display = 'block';
+    playAgain.style.display = 'block';
 }
 
 // Function to render all drawn objects
