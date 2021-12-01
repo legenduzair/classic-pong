@@ -239,14 +239,6 @@ function checkScore() {
     }
 }
 
-function startGame() {
-    headingSection.style.display = 'block';
-    buttonSection.style.display = 'block';
-    gameFinish.style.display = 'none';
-    mainGame.style.display = 'none';
-
-    clearInterval(gameLoopInterval);
-}
 function gameOver() {
     gameArea.style.display = 'none';
     homeSection.style.display = 'none';
@@ -279,7 +271,7 @@ button.addEventListener('click', () => {
     showHide(buttonSection);
     showHide(homeSection);
     
-    gameLoop();
+    gameLoopInterval = setInterval(gameLoop, 1000/framePerSecond);
     resetGame();
 })
 
@@ -302,4 +294,4 @@ function showHide(target) {
 }
 
 let framePerSecond = 60;
-let gameLoopInterval = setInterval(gameLoop, 1000/framePerSecond);
+let gameLoopInterval;
