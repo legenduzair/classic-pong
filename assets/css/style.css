@@ -89,3 +89,40 @@ canvas {
 .hide {
     display: none;
 }
+
+@media only screen and (max-width: 1200px ) {
+    canvas {
+        width: 60%;
+    }
+    #home {
+        font-size: 1.5rem;
+    }
+    #main-game {
+        height: 85vh;
+    }
+}
+
+@media only screen and (max-width: 1050px ) {
+    #button-section {
+        padding-top: 100px;
+    }
+    #title-screen {
+        padding-top: 100px;
+    }
+    .heading {
+        margin: 0;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 900px ) {
+    canvas {
+        width: 70%;
+    }
+    #main-game {
+        height: 80vh;
+    }
+    #title-screen {
+        font-size: 1.7rem;
+    }
+}
