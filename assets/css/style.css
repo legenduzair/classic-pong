@@ -126,3 +126,27 @@ canvas {
         font-size: 1.7rem;
     }
 }
+
+@media only screen and (max-width: 750px ) {
+    #title-screen {
+        font-size: 1.07rem;
+    }
+    #button-section {
+        padding-top: 65px;
+    }
+    #button {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 460px ) {
+    #title-screen {
+        font-size: 1rem;
+    }
+    #button-section {
+        padding-top: 50px;
+    }
+    #button {
+        font-size: 1rem;
+    }
+}
