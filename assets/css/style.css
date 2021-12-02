@@ -113,6 +113,10 @@ canvas {
         margin: 0;
         height: 250px;
     }
+    #game-over {
+        margin: 100px;
+        height: 120px;
+    }
 }
 
 @media only screen and (max-width: 900px ) {
@@ -139,6 +143,18 @@ canvas {
     }
     #home {
         font-size: 4.3vw;
+    }
+}
+
+@media only screen and (max-width: 650px ) {
+    #game-over {
+        margin: 0;
+        margin-top: 100px;
+        font-size: 1.4rem;
+        height: 220px;
+    }
+    #button-two {
+        font-size: 1.4rem;
     }
 }
 
