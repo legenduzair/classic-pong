@@ -142,7 +142,7 @@ canvas {
     }
 }
 
-@media only screen and (max-width: 460px ) {
+@media only screen and (max-width: 462px ) {
     #title-screen {
         font-size: 1rem;
     }
@@ -151,5 +151,17 @@ canvas {
     }
     #button {
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 432px ) {
+    #title-screen {
+        font-size: 0.7rem;
+    }
+    h1 {
+        padding-top: 30px;
+    }
+    #button-section {
+        padding-top: 0;
     }
 }
