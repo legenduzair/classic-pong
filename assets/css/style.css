@@ -216,6 +216,18 @@ canvas {
     canvas {
         width: 130%;
     }
+    #second-div {
+        height: 400px;
+    }
+    #main-game {
+        display: flex;
+        width: 60%;
+        height: 100%;
+    }
+    #home-button {
+        padding-top: 40px;
+        padding-right: 70px;
+    }
 }
 @media only screen and (max-width: 432px ) {
     #title-screen {
