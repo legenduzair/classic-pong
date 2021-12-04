@@ -177,14 +177,31 @@ canvas {
     #first-div {
         display: flex;
         flex-direction: column;
-        width: 800px;
+        width: 950px;
         justify-content: center;
     }
     #title-screen {
         padding: 20px;
     }
+    #second-div {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    align-items: center;
+    }
+    canvas {
+        width: 90%;
+    }
+    #home-button {
+        height: 200px;
+    }
 }
 
+@media only screen and (max-width: 500px ) {
+    #first-div {
+        width: 800px;
+    }
+}
 @media only screen and (max-width: 432px ) {
     #title-screen {
         font-size: 0.7rem;
