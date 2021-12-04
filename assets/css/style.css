@@ -212,21 +212,25 @@ canvas {
     } */
 }
 
-@media only screen and (max-width: 470px ) {
+@media only screen and (max-width: 440px ) {
     canvas {
-        width: 130%;
+        position: absolute;
+        left: 300px;
+        width: 100%;
+        bottom: 15px;
     }
     /* #second-div {
         height: 400px;
     } */
     #main-game {
-        display: flex;
-        width: 60%;
+        /* display: flex;
+        width: 60%; */
         height: 100%;
     }
     #home-button {
-        padding-top: 40px;
-        padding-right: 70px;
+        position: relative;
+        top: 240px;
+        left: 230px;
     }
 }
 @media only screen and (max-width: 432px ) {
