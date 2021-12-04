@@ -195,10 +195,19 @@ canvas {
     #home-button {
         height: 200px;
     }
+    #third-div {
+        display: flex;
+        flex-direction: column;
+        width: 950px;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 500px ) {
     #first-div {
+        width: 800px;
+    }
+    #third-div {
         width: 800px;
     }
 }
@@ -217,5 +226,8 @@ canvas {
     }
     #button-section {
         padding-top: 0;
+    }
+    #game-over {
+        margin-top: 0px;
     }
 }
