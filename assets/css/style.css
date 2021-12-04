@@ -191,15 +191,29 @@ canvas {
     }
     canvas {
         width: 120%;
+        position: absolute;
+        left: 15px;
+        top: 30px;
     }
     #home-button {
         height: 200px;
+        position: relative;
+        bottom: 60px;
+        left: 100px;
     }
     #third-div {
         display: flex;
         flex-direction: column;
         width: 950px;
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 550px ) {
+    #home-button {
+        position: relative;
+        bottom: 60px;
+        left: 60px;
     }
 }
 
@@ -210,6 +224,11 @@ canvas {
     /* #third-div {
         width: 800px;
     } */
+    #home-button {
+        position: relative;
+        bottom: 130px;
+        left: 30px;
+    }
 }
 
 @media only screen and (max-width: 440px ) {
@@ -217,7 +236,7 @@ canvas {
         position: absolute;
         left: 300px;
         width: 100%;
-        bottom: 15px;
+        top: -85px;
     }
     /* #second-div {
         height: 400px;
@@ -248,11 +267,36 @@ canvas {
     }
 }
 
+@media only screen and (max-width: 375px) {
+    #home-button {
+        position: relative;
+        top: 225px;
+        left: 210px;
+    }
+    canvas {
+        position: absolute;
+        left: 300px;
+        width: 100%;
+        top: -60px;
+    }
+}
+
 @media only screen and (max-width: 320px ) {
     #first-div {
         width: 450px;
     }
     #third-div {
         width: 530px;
+    }
+    canvas {
+        position: absolute;
+        left: 150px;
+        width: 100%;
+        top: -45px;
+    }
+    #home-button {
+        position: relative;
+        top: 210px;
+        left: 30px;
     }
 }
