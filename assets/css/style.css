@@ -190,7 +190,7 @@ canvas {
     align-items: center;
     }
     canvas {
-        width: 90%;
+        width: 120%;
     }
     #home-button {
         height: 200px;
@@ -200,6 +200,12 @@ canvas {
 @media only screen and (max-width: 500px ) {
     #first-div {
         width: 800px;
+    }
+}
+
+@media only screen and (max-width: 470px ) {
+    canvas {
+        width: 130%;
     }
 }
 @media only screen and (max-width: 432px ) {
