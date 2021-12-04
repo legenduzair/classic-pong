@@ -11,7 +11,7 @@ const home = document.getElementById('home');
 const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
 const buttonTwo = document.getElementById('button-two');
-const highScore = 200;
+const highScore = 3;
 
 // Movement keys variables
 let upArrowKey = false;
