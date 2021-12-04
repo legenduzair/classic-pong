@@ -207,9 +207,9 @@ canvas {
     #first-div {
         width: 800px;
     }
-    #third-div {
+    /* #third-div {
         width: 800px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 470px ) {
