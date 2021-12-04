@@ -216,9 +216,9 @@ canvas {
     canvas {
         width: 130%;
     }
-    #second-div {
+    /* #second-div {
         height: 400px;
-    }
+    } */
     #main-game {
         display: flex;
         width: 60%;
