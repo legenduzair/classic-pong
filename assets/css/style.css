@@ -170,6 +170,12 @@ canvas {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        transform: rotate(90deg);
+    }
+}
+
 @media only screen and (max-width: 432px ) {
     #title-screen {
         font-size: 0.7rem;
