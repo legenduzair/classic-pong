@@ -1,4 +1,4 @@
-// Canvas Variable
+// Game Variables
 const canvas = document.getElementById("pong");
 const ctx = canvas.getContext("2d");
 const mainGame = document.getElementById('main-game');
@@ -12,13 +12,6 @@ const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
 const buttonTwo = document.getElementById('button-two');
 const highScore = 3;
-
-// Movement keys variables
-let upArrowKey = false;
-let downArrowKey = false;
-
-/* Game Objects */
-// Net Variable
 const net = {
     x: canvas.width/2 - 6/2,
     y: 0,
@@ -26,8 +19,6 @@ const net = {
     height: canvas.height,
     color: '#F3F8F2'
 };
-
-// User Paddle Variable
 const user = {
     x: 10,
     y: canvas.height/2 - 150/2,
@@ -36,8 +27,6 @@ const user = {
     color: '#F3F8F2',
     score: 0
 };
-
-// AI Paddle Variable
 const ai = {
     x: canvas.width - (20+10),
     y: canvas.height/2 - 150/2,
@@ -46,8 +35,6 @@ const ai = {
     color: '#F3F8F2',
     score: 0
 };
-
-// Ball Variable
 const ball = {
     x: canvas.width/2,
     y: canvas.height/2,
@@ -57,6 +44,10 @@ const ball = {
     velocityY: 5,
     color: '#A4243B',
 };
+let upArrowKey = false;
+let downArrowKey = false;
+let framePerSecond = 60;
+let gameLoopInterval;
 
 // Function used to input the game board
 function drawBoard() {
@@ -293,6 +284,3 @@ function showHide(target) {
         target.classList.add('hide')
     }
 }
-
-let framePerSecond = 60;
-let gameLoopInterval;
