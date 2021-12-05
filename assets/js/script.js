@@ -48,46 +48,59 @@ let upArrowKey = false;
 let downArrowKey = false;
 let framePerSecond = 60;
 let gameLoopInterval;
+// Game Functions
 
-// Function used to input the game board
 function drawBoard() {
     ctx.fillStyle = '#0B0500';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-// Function used to input the center net
 function drawNet() {
     ctx.fillStyle = net.color;
     ctx.fillRect(net.x, net.y, net.width, net.height);
 }
 
-// Function used to input the user paddle
 function drawUserPaddle() {
     ctx.fillStyle = user.color;
     ctx.fillRect(user.x, user.y, user.width, user.height);
 }
 
-// Function used to input the AI paddle
 function drawAiPaddle() {
     ctx.fillStyle = ai.color;
     ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
 }
 
-// Function used to input the user score
+/**
+ * 
+ * @param {number} x - X Coordinate
+ * @param {number} y - Y Coordinate
+ * @param {number} score - Score
+ */
 function drawUserScore(x, y, score) {
     ctx.fillStyle = '#F3F8F2';
     ctx.font = '50px fantasy';
     ctx.fillText(score, x, y);
 }
 
-// Function used to input AI score
+/**
+ * 
+ * @param {number} x - X Coordinate
+ * @param {number} y - Y Coordinate
+ * @param {number} score - Score
+ */
 function drawAiScore(x, y, score) {
     ctx.fillStyle = '#F3F8F2';
     ctx.font = '50px fantasy';
     ctx.fillText(score, x, y);
 }
 
-// Function used to draw the ball
+/**
+ * 
+ * @param {number} x - X Coordinate
+ * @param {number} y - Y Coordinate
+ * @param {number} radius - Radius
+ * @param {string} color - Color
+ */
 function drawBall(x, y, radius, color) {
     ctx.fillStyle = color;
     ctx.beginPath();
@@ -97,7 +110,6 @@ function drawBall(x, y, radius, color) {
 }
 
 /* Paddle Movement */
-// Event listener for when pressing and releasing movement keys
 window.addEventListener('keydown', keyDownHandler);
 window.addEventListener('keyup', keyUpHandler);
 
@@ -130,71 +142,57 @@ function keyUpHandler(event) {
 function update() {
 
 // To move the user paddle
-let userSpeed = 9;
-if (upArrowKey && user.y > 0) {
+    let userSpeed = 9;
+    if (upArrowKey && user.y > 0) {
     user.y -= userSpeed;
-} else if (downArrowKey && (user.y < canvas.height - user.height)) {
+    } else if (downArrowKey && (user.y < canvas.height - user.height)) {
     user.y += userSpeed;
-}
+    }
 
 // To move the AI paddle
-let aiSpeed = 0.09;
-ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
+    let aiSpeed = 0.09;
+    ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
 
-// To move the ball along x and y axis
     ball.x += ball.velocityX;
     ball.y += ball.velocityY; 
 
 // To operate collision of the ball with the top and bottom walls
-if(ball.y + ball.radius >= canvas.height || ball.y - ball.radius <= 0) {
+    if(ball.y + ball.radius >= canvas.height || ball.y - ball.radius <= 0) {
     ball.velocityY = -ball.velocityY;
-}
+    }
 
 // To operate collision of the ball with the right wall
-if(ball.x + ball.radius >= canvas.width) {
-    // User scores one point and ball resets
+    if(ball.x + ball.radius >= canvas.width) {
     user.score++;
     resetBall();
 // To operate collision of the ball with the left wall
-} else if(ball.x - ball.radius <= 0) {
-    // AI scores one point and ball resets
+    } else if(ball.x - ball.radius <= 0) {
     ai.score++;
     resetBall();
-}
+    }
 
 // To determine whether the player is the user or ai
-let player = (ball.x < canvas.width/2) ? user : ai;
-if (collisionDetection(ball, player)) {
-// Default angle of deflected ball is 0 degrees
-let angle = 0;
-// If the ball hits the top half of the paddle
-if(ball.y < (player.y + player.height/2)) {
-// Then it will deflect off the paddle with an angle of -45 degrees (-1* PI/4)
+    let player = (ball.x < canvas.width/2) ? user : ai;
+// Angle generated depending on which half of the paddle the ball has hit
+    if (collisionDetection(ball, player)) {
+    let angle = 0;
+    if(ball.y < (player.y + player.height/2)) {
     angle = -1 * Math.PI/4;
-// If the ball hits the bottom half of the paddle
-} else if(ball.y > (player.y + player.height/2)) {
-// Then it will deflect off the paddle with an angle of 45 degrees (PI/4)
+    } else if(ball.y > (player.y + player.height/2)) {
     angle = Math.PI/4;
-}
-// Declared direction variable to determine the velocity of the ball along the x axis depending on which player (user or ai) collides with it
-// If user collides with the ball, the velocity is positive (1) but if the ai collides with the ball, the velocity is negative (-1)
-let direction = player === user ? 1 : -1;
-// Changes velocity of the ball along the X axis using the direction variable
-ball.velocityX = direction * ball.speed * Math.cos(angle);
-// Changes velocity of the ball along the Y axis
-ball.velocityY = ball.speed * Math.sin(angle);
-// Ball speed increases everytime the ball collides with the player
-ball.speed += 0.2;
-}
-}
+    }
+    let direction = player === user ? 1 : -1;
+    ball.velocityX = direction * ball.speed * Math.cos(angle);
+    ball.velocityY = ball.speed * Math.sin(angle);
+    ball.speed += 0.2;
+    }
+    }
 
 // Function to reset ball to center of the canvas
 function resetBall() {
-// Resets the ball to its original position and speed
     ball.x = canvas.width/2;
     ball.y = canvas.height/2;
     ball.speed = 7;
-// When the ball is reset, the direction of ball changes
     ball.velocityX = -ball.velocityX;
     ball.velocityY = -ball.velocityY;
 }
@@ -210,26 +208,26 @@ function resetGame() {
 }
 // Function to detect collision of ball with user and ai paddles
 function collisionDetection(ball, player){
-// Sets the top, bottom, right and left positions of paddles
     player.top = player.y;
     player.bottom = player.y + player.height;
     player.right = player.x + player.width;
     player.left = player.x;
-// Sets the top, bottom, right and left positions of the ball
     ball.top = ball.y - ball.radius;
     ball.bottom = ball.y + ball.radius;
     ball.right = ball.x + ball.radius;
     ball.left = ball.x - ball.radius;
-// Combines both to generate a return statement to be true, if not false
+
     return ball.top < player.bottom && ball.bottom > player.top && ball.right > player.left && ball.left < player.right;
 }
 
+// Function to check high score
 function checkScore() {
     if(user.score == highScore || ai.score == highScore) {
         gameOver();
     }
 }
 
+// Function to display game over screen
 function gameOver() {
     gameArea.style.display = 'none';
     homeSection.style.display = 'none';
