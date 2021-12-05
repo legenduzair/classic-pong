@@ -135,9 +135,6 @@ function keyUpHandler(event) {
     }
 }
 
-window.addEventListener('touchstart', keyDownHandler, true);
-window.addEventListener('touchend', keyUpHandler, false);
-
 // Function that includes all of the calculations created to operate the game 
 function update() {
 
