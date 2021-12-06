@@ -22,8 +22,8 @@ Before initiating the project, I planned the layout and structure of the game ac
 
 ### Calculations and Notes
 - Measurements (Wireframes)
-  - [Canvas Width Measurement]()
-  - [Canvas Height Measurement]()
-  - [Net Measurement]()
-  - [Paddles Measurement]()
-  - [Scores Measurement]()
+  - [Canvas Width Measurement](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/canvas-width-measure.png)
+  - [Canvas Height Measurement](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/canvas-height-measure.png)
+  - [Net Measurement](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/net-measure.png)
+  - [Paddles Measurement](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/paddle-measure.png)
+  - [Scores Measurement](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/scores-measure.png)
