@@ -15,8 +15,6 @@ Before initiating the project, I planned the layout and structure of the game ac
   - [Main Game Screen](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/canvas-page-ss.png)
   - [Game Over Screen](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/gameover-page-ss.png)
 - Tablet View
-  - [Title Screen]()
-  - [Main Game Screen]()
-  - [Game Over Screen]()
+  - [All Screens]()
 
 ### Calculations and Notes
