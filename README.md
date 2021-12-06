@@ -21,3 +21,9 @@ Before initiating the project, I planned the layout and structure of the game ac
   - [All Screens](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/mobile-view-allpages.png)
 
 ### Calculations and Notes
+- Measurements (Wireframes)
+  - [Canvas Width Measurement]()
+  - [Canvas Height Measurement]()
+  - [Net Measurement]()
+  - [Paddles Measurement]()
+  - [Scores Measurement]()
