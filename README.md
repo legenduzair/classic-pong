@@ -1,3 +1,3 @@
 # Classic Pong!
 
-Classic Pong is a 2d game that utilises HTML, CSS and Javascript.
+Classic Pong is a fully responsive project that utilises HTML, CSS and Javascript to create an alternate version of the 2d old school classic 'ping-pong'. This game will allow the user to play against the computer by operating the paddle with keys on desktop or using touch controls on mobile and tablets. To win the game, the user will defeat the computer by deflecting the ball off their paddle and bypass the computer's paddle to reach the high score. If there is a rally between the user and the computer, the difficulty of the game increases as it is hastened. This will allow the user to make quicker decisions and force them to react faster. Classic Pong is targetted at an audience of all ages and interests who want to have fun and enjoy playing a classic ping pong game that is functional. 
