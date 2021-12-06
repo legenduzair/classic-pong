@@ -9,6 +9,7 @@ Classic Pong is a fully responsive project that utilises HTML, CSS and Javascrip
 ## UX & Planning
 
 Before initiating the project, I planned the layout and structure of the game across multiple screens using Balsamiq Wireframes. During the project, I also produced handwritten notes and calculations to help me understand the logic of the game and develop my knowledge of Javascript at its core. The wireframes and handwritten notes designed are listed below.
+
 ### Wireframes
 - Desktop View
   - [Title Screen](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/home-page-ss.png)
