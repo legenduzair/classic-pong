@@ -17,6 +17,6 @@ Before initiating the project, I planned the layout and structure of the game ac
 - Tablet View
   - [All Screens](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/tablet-view-allpages.png)
 - Mobile View
-  - [All Screens]()
+  - [All Screens](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/mobile-view-allpages.png)
 
 ### Calculations and Notes
