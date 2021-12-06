@@ -299,4 +299,13 @@ canvas {
         top: 210px;
         left: 30px;
     }
+    #title-screen {
+        padding: 6px;
+    }
+    h1 {
+        padding-top: 50px;
+    }
+    img {
+        padding-top: 20px;
+    }
 }
