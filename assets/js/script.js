@@ -7,7 +7,6 @@ const gameArea = document.getElementById('pong');
 const buttonSection = document.getElementById('button-section');
 const button = document.getElementById('button');
 const homeSection = document.getElementById('home-button');
-const home = document.getElementById('home');
 const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
 const buttonTwo = document.getElementById('button-two');
@@ -302,7 +301,7 @@ button.addEventListener('click', () => {
     
     gameLoopInterval = setInterval(gameLoop, 1000/framePerSecond);
     resetGame();
-})
+});
 
 buttonTwo.addEventListener('click', () => {
     gameArea.style.display = 'block';
@@ -312,12 +311,12 @@ buttonTwo.addEventListener('click', () => {
     mainGame.style.display = 'flex';
 
     resetGame();
-})
+});
 
 function showHide(target) {
     if(target.classList.contains('hide')) {
-        target.classList.remove('hide')
+        target.classList.remove('hide');
     } else {
-        target.classList.add('hide')
+        target.classList.add('hide');
     }
 }
