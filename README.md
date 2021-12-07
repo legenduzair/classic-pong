@@ -80,3 +80,9 @@ Before initiating the project, I planned the layout and structure of the game ac
   - When the user views this screen on a mobile, the orientation of the page is forced into landscape mode which allows the layout of the content to fit the viewport size without getting too small.
 
 ![Game Over - Small Screen Sizes](/documentation/screenshots/small-screens-gameover.png)
+
+### Controls 
+
+  - The project has a variety of controls that can be used to make the game more acessible for the user. When playing Classic Pong on devices with keyboards, the up and down arrow key and can be used to control the user's paddle. 
+  - When playing Classic Pong on devices that do not have keyboards but rely on touch instead, the user will be able to control the paddle by touching the game board and swiping up and down on medium screens.
+  - Due to landscape orientation on smaller screen sizes, the user will be able to control the paddle by touching the game board and swiping right and left. The interactive buttons on the project are also accessible by touch on touchscreen supported devices. 
