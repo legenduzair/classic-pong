@@ -44,6 +44,10 @@ Before initiating the project, I planned the layout and structure of the game ac
 
 ![Main Menu - Medium Screen Sizes](/documentation/screenshots/medium-screens-mainmenu.png)
 
+  - When the user views this screen on a mobile, the orientation of the page is forced into landscape mode which allows the layout of the content to fit the viewport size without getting too small.
+
+![Main Menu - Small Screen Sizes](/documentation/screenshots/small-screens-mainmenu.png)
+
 - Main Game Board
 
   - When the user navigates to this screen, the main game is displayed where the user can play against the computer. The left paddle will be controlled by the user by pressing the up and down arrow keys. The computer's paddle will have automated movement and will match the ball movement to attempt to score past the user.
@@ -57,6 +61,10 @@ Before initiating the project, I planned the layout and structure of the game ac
 
 ![Main Game - Medium Screen Sizes](/documentation/screenshots/medium-screens-maingame.png)
 
+  - When the user views this screen on a mobile, the orientation of the page is forced into landscape mode which allows the layout of the content to fit the viewport size without getting too small.
+
+![Main Game - Small Screen Sizes](/documentation/screenshots/small-screens-maingame.png)
+
 - Game Over Screen
 
   - Once the user reaches a certain high score, the game over screen will be displayed.
@@ -68,3 +76,7 @@ Before initiating the project, I planned the layout and structure of the game ac
   - When the user views this screen on a laptop/tablet, the structure of the content is very similar but reduced to a smaller scale to fit the viewport size.
 
 ![Game Over - Medium Screen Sizes](/documentation/screenshots/medium-screens-gameover.png)
+
+  - When the user views this screen on a mobile, the orientation of the page is forced into landscape mode which allows the layout of the content to fit the viewport size without getting too small.
+
+![Game Over - Small Screen Sizes](/documentation/screenshots/small-screens-gameover.png)
