@@ -127,6 +127,7 @@ function touchStartHandler(event) {
 }
 
 function touchMoveHandler(event) {
+    event.preventDefault();
     if(event.target === canvas) {
         if(event.touches[0].clientY < touchY) {
             movePlayerUp();
@@ -134,7 +135,6 @@ function touchMoveHandler(event) {
             movePlayerDown();
         }
         touchY = event.touches[0].clientY;
-        event.preventDefault();
     }
 }
 
