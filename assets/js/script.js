@@ -121,12 +121,14 @@ window.addEventListener('touchstart', touchStartHandler);
 window.addEventListener('touchmove', touchMoveHandler);
 
 function touchStartHandler(event) {
+    event.preventDefault();
     if(event.target === canvas) {
         touchY = event.touches[0].clientY;
     }
 }
 
 function touchMoveHandler(event) {
+    event.preventDefault();
     if(event.target === canvas) {
         if(event.touches[0].clientY < touchY) {
             movePlayerUp();
