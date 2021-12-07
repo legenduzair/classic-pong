@@ -33,7 +33,7 @@ Before initiating the project, I planned the layout and structure of the game ac
 ## Features 
 
 ### Existing Features
-- Main Menu
+- Main Menu Screen
 
   - The main menu consists of the Classic Pong logo, the name of the game which is displayed in an arcade style font to correspond with the vibe of the project and an interactive button to allow the user to navigate from this screen to the main game where it is played. 
   - The interactive button is also displayed in the same font and lighting up white when hovered over. 
@@ -46,6 +46,13 @@ Before initiating the project, I planned the layout and structure of the game ac
   - The ball which is constantly moving and bouncing off the top and bottom walls, will have to be deflected off the user's paddle to attempt to bypass the computer's paddle to gain a score point.
   - The scoreboard on the top of the game board will also allow the user to see how well they are performing during the game. 
   - The interactive button located at the bottom of the page is present to allow the user to navigate back to the main menu screen if needs be. 
-  - Once the user reaches a certain high score, the game over screen will be displayed.
 
 ![Main Game](/documentation/screenshots/main-game-ss.png)
+
+- Game Over Screen
+
+  - Once the user reaches a certain high score, the game over screen will be displayed.
+  - This screen consists of a heading portraying the text 'Game Over' to let the user acknowledge that the game is finished. The text is displayed in the same arcade style font in different elements throughout the project.
+  - The interactive button located below the heading allows the user to navigate back to the main game screen where they can attempt to play the game again. 
+
+![Game Over](/documentation/screenshots/game-over-ss.png)
