@@ -14,6 +14,7 @@ const buttonTwo = document.getElementById('button-two');
 const highScore = 3;
 
 const userSpeed = 9;
+let touchY = 0;
 
 const net = {
     x: canvas.width/2 - 6/2,
@@ -115,6 +116,26 @@ function drawBall(x, y, radius, color) {
 /* Paddle Movement */
 window.addEventListener('keydown', keyDownHandler);
 window.addEventListener('keyup', keyUpHandler);
+
+window.addEventListener('touchstart', touchStartHandler);
+window.addEventListener('touchmove', touchMoveHandler);
+
+function touchStartHandler(event) {
+    if(event.target === canvas) {
+        touchY = event.touches[0].clientY;
+    }
+}
+
+function touchMoveHandler(event) {
+    if(event.target === canvas) {
+        if(event.touches[0].clientY < touchY) {
+            movePlayerUp();
+        } else if(event.touches[0].clientY > touchY) {
+            movePlayerDown();
+        }
+        touchY = event.touches[0].clientY;
+    }
+}
 
 // Function to activate when arrow keys are pressed
 function keyDownHandler(event) {
