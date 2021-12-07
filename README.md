@@ -29,3 +29,13 @@ Before initiating the project, I planned the layout and structure of the game ac
   - [Scores Measurement](https://github.com/legenduzair/classic-pong/blob/main/documentation/screenshots/scores-measure.png)
 - Handwritten Calculations
   - [All Calculations and Notes](https://github.com/legenduzair/classic-pong/blob/main/documentation/calculations/calculations-scan-pong.pdf)
+
+## Features 
+
+### Existing Features
+- Main Menu
+
+  - The main menu consists of the Classic Pong logo, the name of the game which is displayed in an arcade style font to correspond with the vibe of the project and an interactive button to allow the user to navigate from this screen to the main game where it is played. 
+  - The interactive button is also displayed in the same font and lighting up white when hovered over. 
+
+  ![Main Menu](/documentation/screenshots/main-menu-ss.png)
