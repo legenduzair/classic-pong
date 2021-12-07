@@ -123,7 +123,6 @@ window.addEventListener('touchmove', touchMoveHandler);
 function touchStartHandler(event) {
     if(event.target === canvas) {
         touchY = event.touches[0].clientY;
-        event.preventDefault();
     }
 }
 
