@@ -40,6 +40,10 @@ Before initiating the project, I planned the layout and structure of the game ac
 
 ![Main Menu](/documentation/screenshots/main-menu-ss.png)
 
+  - When the user views this screen on a laptop/tablet, the structure of the content is very similar but reduced to a smaller scale to fit the viewport size.
+
+![Main Menu - Medium Screen Sizes](/documentation/screenshots/medium-screens-mainmenu.png)
+
 - Main Game Board
 
   - When the user navigates to this screen, the main game is displayed where the user can play against the computer. The left paddle will be controlled by the user by pressing the up and down arrow keys. The computer's paddle will have automated movement and will match the ball movement to attempt to score past the user.
@@ -49,6 +53,10 @@ Before initiating the project, I planned the layout and structure of the game ac
 
 ![Main Game](/documentation/screenshots/main-game-ss.png)
 
+  - When the user views this screen on a laptop/tablet, the structure of the content is very similar but reduced to a smaller scale to fit the viewport size.
+
+![Main Game - Medium Screen Sizes](/documentation/screenshots/medium-screens-maingame.png)
+
 - Game Over Screen
 
   - Once the user reaches a certain high score, the game over screen will be displayed.
@@ -56,3 +64,7 @@ Before initiating the project, I planned the layout and structure of the game ac
   - The interactive button located below the heading allows the user to navigate back to the main game screen where they can attempt to play the game again. 
 
 ![Game Over](/documentation/screenshots/game-over-ss.png)
+
+  - When the user views this screen on a laptop/tablet, the structure of the content is very similar but reduced to a smaller scale to fit the viewport size.
+
+![Game Over - Medium Screen Sizes](/documentation/screenshots/medium-screens-gameover.png)
