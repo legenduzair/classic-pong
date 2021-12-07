@@ -38,4 +38,14 @@ Before initiating the project, I planned the layout and structure of the game ac
   - The main menu consists of the Classic Pong logo, the name of the game which is displayed in an arcade style font to correspond with the vibe of the project and an interactive button to allow the user to navigate from this screen to the main game where it is played. 
   - The interactive button is also displayed in the same font and lighting up white when hovered over. 
 
-  ![Main Menu](/documentation/screenshots/main-menu-ss.png)
+![Main Menu](/documentation/screenshots/main-menu-ss.png)
+
+- Main Game Board
+
+  - When the user navigates to this screen, the main game is displayed where the user can play against the computer. The left paddle will be controlled by the user by pressing the up and down arrow keys. The computer's paddle will have automated movement and will match the ball movement to attempt to score past the user.
+  - The ball which is constantly moving and bouncing off the top and bottom walls, will have to be deflected off the user's paddle to attempt to bypass the computer's paddle to gain a score point.
+  - The scoreboard on the top of the game board will also allow the user to see how well they are performing during the game. 
+  - The interactive button located at the bottom of the page is present to allow the user to navigate back to the main menu screen if needs be. 
+  - Once the user reaches a certain high score, the game over screen will be displayed.
+
+![Main Game](/documentation/screenshots/main-game-ss.png)
