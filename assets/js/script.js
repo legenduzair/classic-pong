@@ -14,6 +14,10 @@ const highScore = 3;
 
 const userSpeed = 9;
 let touchY = 0;
+let upArrowKey = false;
+let downArrowKey = false;
+let framePerSecond = 60;
+let gameLoopInterval;
 
 const net = {
     x: canvas.width/2 - 6/2,
@@ -47,11 +51,8 @@ const ball = {
     velocityY: 5,
     color: '#A4243B',
 };
-let upArrowKey = false;
-let downArrowKey = false;
-let framePerSecond = 60;
-let gameLoopInterval;
-// Game Functions
+
+// Functions to draw the objects
 
 function drawBoard() {
     ctx.fillStyle = '#0B0500';
@@ -138,7 +139,6 @@ function touchMoveHandler(event) {
 
 // Function to activate when arrow keys are pressed
 function keyDownHandler(event) {
-    // Acquire the keyCode for both up and down arrow keys
     switch (event.keyCode) {
         case 38:
             upArrowKey = true;
@@ -183,11 +183,10 @@ function update() {
     ball.velocityY = -ball.velocityY;
     }
 
-// To operate collision of the ball with the right wall
+// To operate collision of the ball with the right and left walls
     if(ball.x + ball.radius >= canvas.width) {
     user.score++;
     resetBall();
-// To operate collision of the ball with the left wall
     } else if(ball.x - ball.radius <= 0) {
     ai.score++;
     resetBall();
@@ -210,6 +209,7 @@ function update() {
     }
 }
 
+// Function to move user paddle up
 function movePlayerUp() {
     if(user.y - userSpeed < 0){
         user.y = 0;
@@ -218,6 +218,7 @@ function movePlayerUp() {
     }
 }
 
+// Function to move user paddle down
 function movePlayerDown() {
     if(user.y + userSpeed > canvas.height - user.height) {
         user.y = canvas.height - user.height;
@@ -235,6 +236,7 @@ function resetBall() {
     ball.velocityY = -ball.velocityY;
 }
 
+// Function to reset game
 function resetGame() {
     resetBall();
     user.score = 0;
@@ -292,6 +294,7 @@ function gameLoop() {
     checkScore();
 }
 
+// Event listeners for interactive buttons
 button.addEventListener('click', () => {
     showHide(gameArea);
     showHide(headingSection);
