@@ -12,6 +12,9 @@ const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
 const buttonTwo = document.getElementById('button-two');
 const highScore = 3;
+
+const userSpeed = 9;
+
 const net = {
     x: canvas.width/2 - 6/2,
     y: 0,
@@ -142,11 +145,10 @@ function keyUpHandler(event) {
 function update() {
 
 // To move the user paddle
-    let userSpeed = 9;
     if (upArrowKey && user.y > 0) {
-    user.y -= userSpeed;
+        movePlayerUp();
     } else if (downArrowKey && (user.y < canvas.height - user.height)) {
-    user.y += userSpeed;
+        movePlayerDown();
     }
 
 // To move the AI paddle
@@ -186,7 +188,23 @@ function update() {
     ball.velocityY = ball.speed * Math.sin(angle);
     ball.speed += 0.2;
     }
+}
+
+function movePlayerUp() {
+    if(user.y - userSpeed < 0){
+        user.y = 0;
+    } else {
+        user.y -= userSpeed;
     }
+}
+
+function movePlayerDown() {
+    if(user.y + userSpeed > canvas.height - user.height) {
+        user.y = canvas.height - user.height;
+    } else {
+        user.y += userSpeed;
+    }
+}
 
 // Function to reset ball to center of the canvas
 function resetBall() {
