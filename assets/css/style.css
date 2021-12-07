@@ -4,6 +4,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     color: #A4243B;
     text-align: center;
+    touch-action: none;
 }
 
 /* Heading */
