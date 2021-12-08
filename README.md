@@ -99,6 +99,7 @@ When designing Classic Pong, I felt like a retro style font would fit the theme 
 ## Future Improvements
 
 Ongoing improvements and developments are vital to any project and their success. Future ideas I would implement are:
+
   - Integrate increasing difficulty levels if the user has beaten the computer each stage rather than game being over after one level.
   - Visually improve graphics of the ping pong game, making the canvas appear more stylish.
   - Implement audio to the game when user or computer hits the ball or when either player scores. 
@@ -106,4 +107,13 @@ Ongoing improvements and developments are vital to any project and their success
 
 ## Testing
 
-During the development of Classic Pong, the project went through rigorous testing to ensure a fully responsive and functional game was created across all screen sizes. To accomplish this, I used Google Chrome's Developer Tools to continuously test the game when applying styling, adjusting HTML and Javascript codes using a live server window. If any errors occured in the console, these would be seen to immediately to make sure the project would function properly. Many devices and screen sizes were used to test the responsiveness and amend the design of the game to fit all viewports. 
+During the development of Classic Pong, the project went through rigorous testing to ensure a fully responsive and functional game was created across all screen sizes. To accomplish this, I used Google Chrome's Developer Tools to continuously test the game when applying styling, adjusting HTML and Javascript codes using a live server window. If any errors occured in the console, these would be seen to immediately to make sure the project would function properly. Many browsers and devices with varied screen sizes were used to test the responsiveness and amend the design of the game to fit all viewports. 
+
+To ensure cross-compatibility, I tested the project on four different browsers during and after development:
+  
+  - Google Chrome
+  - Mozilla Firefox
+  - Microsoft Edge
+  - iOS Safari
+
+After developing the game for desktop screens (1920 x 1080 pixels), I further examined it on different devices to ensure full responsiveness was acquired. On medium sized screens (laptop/tablet), the layout of the game was the same but the scale of the content was reduced to fit the respective viewport size. I achieved responsiveness on small sized screens (small & large mobiles) by forcing the orientation of the screen to portray as landscape. This landscape orientation is present on devices that are 600 pixels or lower in width. Following this procedure, I manually tested the game on different mobile devices such as iPhone 11 Pro Max, IPhone 5/SE and a variety of Android phones that my family & friends own. Classic Pong was also tested on the iPad Air, iPad Pro and the HP EliteBook 840 G4 for examination on medium sized screens. 
