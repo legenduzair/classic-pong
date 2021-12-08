@@ -1,5 +1,6 @@
 # Classic Pong!
 ## Introduction
+
 Classic Pong is a fully responsive project that utilises HTML, CSS and Javascript to create an alternate version of the 2d old school classic 'ping-pong'. This game will allow the user to play against the computer by operating the paddle with keys on desktop or using touch controls on mobile and tablets. To win the game, the user will defeat the computer by deflecting the ball off their paddle and bypass the computer's paddle to reach the high score. If there is a rally between the user and the computer, the difficulty of the game increases as it is hastened. This will allow the user to make quicker decisions and force them to react faster. Classic Pong is targetted at an audience of all ages and interests who want to have fun and enjoy playing a classic ping pong game that is functional. 
 
 ![Responsive Screenshot Markup](/documentation/screenshots/responsive-screenshot.png)
@@ -31,9 +32,11 @@ Before initiating the project, I planned the layout and structure of the game ac
   - [All Calculations and Notes](https://github.com/legenduzair/classic-pong/blob/main/documentation/calculations/calculations-scan-pong.pdf)
 
 ## Color Scheme
+
 For the general color scheme of the project, I went with a smoky blue background with a bright red/pink color for the content structured on the various screens. When hovered over, the interactive buttons all light up white which fit the pink color of the buttons. This theme makes the project appear stylish and easily visible to the user as the foreground content stands out from the background. For the canvas, I used a plain black background with majority of the objects being white and the ball being the bright red/pink color used before on different screens. This allows the user to view the canvas properly when playing the game and does not distract them from colors that are blinding to the human eye. These colors were chosen from one source called [Coolors](https://coolors.co/). Hex values were used when inputting the colors in the CSS file. 
 
 ## Typography
+
 When designing Classic Pong, I felt like a retro style font would fit the theme of the game and therefore picked 'Press Start 2P' from [Google Fonts](https://fonts.google.com/). This corresponded with the minimalistic and classic feel the game portrayed. 
 
 ## Features 
@@ -92,3 +95,11 @@ When designing Classic Pong, I felt like a retro style font would fit the theme 
   - The project has a variety of controls that can be used to make the game more acessible for the user. When playing Classic Pong on devices with keyboards, the up and down arrow key and can be used to control the user's paddle. 
   - When playing Classic Pong on devices that do not have keyboards but rely on touch instead, the user will be able to control the paddle by touching the game board and swiping up and down on medium screens.
   - Due to landscape orientation on smaller screen sizes, the user will be able to control the paddle by touching the game board and swiping right and left. The interactive buttons on the project are also accessible by touch on touchscreen supported devices. 
+
+## Future Improvements
+
+Ongoing improvements and developments are vital to any project and their success. Future ideas I would implement are:
+  - Integrate increasing difficulty levels if the user has beaten the computer each stage rather than game being over after one level.
+  - Visually improve graphics of the ping pong game, making the canvas appear more stylish.
+  - Implement audio to the game when user or computer hits the ball or when either player scores. 
+  - Polish up touch controls on mobile either by improving current conrols or adding a controller buttons for the user to press.
