@@ -32,6 +32,10 @@ Before initiating the project, I planned the layout and structure of the game ac
 
 ## Color Scheme
 For the general color scheme of the project, I went with a smoky blue background with a bright red/pink color for the content structured on the various screens. When hovered over, the interactive buttons all light up white which fit the pink color of the buttons. This theme makes the project appear stylish and easily visible to the user as the foreground content stands out from the background. For the canvas, I used a plain black background with majority of the objects being white and the ball being the bright red/pink color used before on different screens. This allows the user to view the canvas properly when playing the game and does not distract them from colors that are blinding to the human eye. These colors were chosen from one source called [Coolors](https://coolors.co/). Hex values were used when inputting the colors in the CSS file. 
+
+## Typography
+When designing Classic Pong, I felt like a retro style font would fit the theme of the game and therefore picked 'Press Start 2P' from [Google Fonts](https://fonts.google.com/). This corresponded with the minimalistic and classic feel the game portrayed. 
+
 ## Features 
 
 ### Existing Features
