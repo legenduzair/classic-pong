@@ -117,3 +117,24 @@ To ensure cross-compatibility, I tested the project on four different browsers d
   - iOS Safari
 
 After developing the game for desktop screens (1920 x 1080 pixels), I further examined it on different devices to ensure full responsiveness was acquired. On medium sized screens (laptop/tablet), the layout of the game was the same but the scale of the content was reduced to fit the respective viewport size. I achieved responsiveness on small sized screens (small & large mobiles) by forcing the orientation of the screen to portray as landscape. This landscape orientation is present on devices that are 600 pixels or lower in width. Following this procedure, I manually tested the game on different mobile devices such as iPhone 11 Pro Max, IPhone 5/SE and a variety of Android phones that my family & friends own. Classic Pong was also tested on the iPad Air, iPad Pro and the HP EliteBook 840 G4 for examination on medium sized screens. 
+
+## Bugs
+
+During and after development of Classic Pong, I encountered many bugs which needed attending to. These are listed below:
+
+### Fixed Bugs
+
+ - **Bug No 1**
+   - **Problem**: The game was running in the background when user was on title screen.
+   - **Cause**: The variable which allowed the game to run 60 frames per second (gameLoopInterval) was being assigned globally.
+   - **Fix**: This variable was assigned in an event listener for the first button, so the game would only run if the button was clicked.
+
+ - **Bug No 2**
+   - **Problem**: The game was running in the background after the user had completed the game and was on the game over screen. 
+   - **Cause**: The function to reset the game was called in the game over function.
+   - **Fix**: The reset game function was taken out of the game over function.
+
+  - **Bug No 3**
+   - **Problem**: The main game div was occupying space on the title screen leaving huge space below the 'click to play' button.
+   - **Cause**: The main game div had a flex display on.
+   - **Fix**: The flex display from the main game div was removed and was set to display none. The flex display was added in the event listener for the first button.
