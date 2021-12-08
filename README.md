@@ -103,3 +103,7 @@ Ongoing improvements and developments are vital to any project and their success
   - Visually improve graphics of the ping pong game, making the canvas appear more stylish.
   - Implement audio to the game when user or computer hits the ball or when either player scores. 
   - Polish up touch controls on mobile either by improving current conrols or adding a controller buttons for the user to press.
+
+## Testing
+
+During the development of Classic Pong, the project went through rigorous testing to ensure a fully responsive and functional game was created across all screen sizes. To accomplish this, I used Google Chrome's Developer Tools to continuously test the game when applying styling, adjusting HTML and Javascript codes using a live server window. If any errors occured in the console, these would be seen to immediately to make sure the project would function properly. Many devices and screen sizes were used to test the responsiveness and amend the design of the game to fit all viewports. 
