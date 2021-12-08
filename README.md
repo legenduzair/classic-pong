@@ -124,17 +124,17 @@ During and after development of Classic Pong, I encountered many bugs which need
 
 ### Fixed Bugs
 
- - **Bug No 1**
+- **Bug No 1**
    - **Problem**: The game was running in the background when user was on title screen.
    - **Cause**: The variable which allowed the game to run 60 frames per second (gameLoopInterval) was being assigned globally.
    - **Fix**: This variable was assigned in an event listener for the first button, so the game would only run if the button was clicked.
 
- - **Bug No 2**
+- **Bug No 2**
    - **Problem**: The game was running in the background after the user had completed the game and was on the game over screen. 
    - **Cause**: The function to reset the game was called in the game over function.
    - **Fix**: The reset game function was taken out of the game over function.
 
-  - **Bug No 3**
+- **Bug No 3**
    - **Problem**: The main game div was occupying space on the title screen leaving huge space below the 'click to play' button.
    - **Cause**: The main game div had a flex display on.
    - **Fix**: The flex display from the main game div was removed and was set to display none. The flex display was added in the event listener for the first button.
