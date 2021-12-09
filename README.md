@@ -144,6 +144,11 @@ During and after development of Classic Pong, I encountered many bugs which need
    - **Cause**: When exporting the wireframes to PDF, the option to include page numbers and notes were ticked.
    - **Fix**: When exporting the wireframes to PDF, the option to include page numbers and notes were unticked.
 
+- **Bug No 5**
+   - **Problem**: On iOS Safari on iPhones, the screen would scroll and zoom when controlling the paddle with touch using finger swipe.
+   - **Cause**: No function included in code to prevent the default touch behaviour.
+   - **Fix**: For iOS, the function for preventing the default touch behaviour needed to be called in an event listener and the passive was set to false. This is a common issue and the fix was found on [Stack Overflow](https://stackoverflow.com/). 
+
 ## Validator Testing
 
   - HTML
