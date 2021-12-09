@@ -143,3 +143,18 @@ During and after development of Classic Pong, I encountered many bugs which need
    - **Problem**: The initial set of wireframes uploaded were not displaying properly.
    - **Cause**: When exporting the wireframes to PDF, the option to include page numbers and notes were ticked.
    - **Fix**: When exporting the wireframes to PDF, the option to include page numbers and notes were unticked.
+
+## Validator Testing
+
+  - HTML
+    - No errors were displayed when running the HTML code through the NU HTML Checker.
+      - [HTML Code Check](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Flegenduzair.github.io%2Fclassic-pong%2F)
+
+  - CSS
+    - No errors were displayed when running the CSS code through the official (Jigsaw) validator.
+      - [CSS Code Check](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flegenduzair.github.io%2Fclassic-pong%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+  - Javascript
+    - No errors were displayed when running the Javascript code through JS Hint (Javascript Code Quality Tool).
+      - [Link to JS Hint](https://jshint.com/)
+      
