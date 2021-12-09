@@ -138,3 +138,8 @@ During and after development of Classic Pong, I encountered many bugs which need
    - **Problem**: The main game div was occupying space on the title screen leaving huge space below the 'click to play' button.
    - **Cause**: The main game div had a flex display on.
    - **Fix**: The flex display from the main game div was removed and was set to display none. The flex display was added in the event listener for the first button.
+
+- **Bug No 4**
+   - **Problem**: The initial set of wireframes uploaded were not displaying properly.
+   - **Cause**: When exporting the wireframes to PDF, the option to include page numbers and notes were ticked.
+   - **Fix**: When exporting the wireframes to PDF, the option to include page numbers and notes were unticked.
