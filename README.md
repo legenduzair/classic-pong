@@ -149,6 +149,13 @@ During and after development of Classic Pong, I encountered many bugs which need
    - **Cause**: No function included in code to prevent the default touch behaviour.
    - **Fix**: For iOS, the function for preventing the default touch behaviour needed to be called in an event listener and the passive was set to false. This is a common issue and the fix was found on [Stack Overflow](https://stackoverflow.com/). 
 
+### Unfixed Bugs
+
+- **Bug No 1**
+   - **Problem**: When playing the game, if either paddle is at the bottom or top of the canvas and hits the ball to try to rebound it off the walls, the ball will attach to the top or bottom wall. This is known issue which rarely occurs but is still present:
+
+   ![Unfixed Bug 1](/documentation/screenshots/pong-unfixed-bug.png)
+
 ## Validator Testing
 
   - HTML
