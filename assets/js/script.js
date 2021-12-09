@@ -294,6 +294,12 @@ function gameLoop() {
     checkScore();
 }
 
+function preventBehaviour(e){
+    e.preventDefault();
+};
+
+window.addEventListener("touchmove", preventBehaviour, {passive: false});
+
 // Event listeners for interactive buttons
 button.addEventListener('click', () => {
     showHide(gameArea);
