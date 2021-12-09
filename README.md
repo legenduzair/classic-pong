@@ -152,7 +152,7 @@ During and after development of Classic Pong, I encountered many bugs which need
 ### Unfixed Bugs
 
 - **Bug No 1**
-   - **Problem**: When playing the game, if either paddle is at the bottom or top of the canvas and hits the ball to try to rebound it off the walls, the ball will attach to the top or bottom wall. This is known issue which rarely occurs but is still present:
+   - **Problem**: When playing the game, if either paddle is at the bottom or top of the canvas and hits the ball to try to rebound it off the walls, the ball will attach to the top or bottom wall. This is a known issue which rarely occurs but is still present. To get rid of the bug, the user has to let the computer score or the game has to be restarted. The bug is as shown below:
 
    ![Unfixed Bug 1](/documentation/screenshots/pong-unfixed-bug.png)
 
