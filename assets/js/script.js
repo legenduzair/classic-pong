@@ -294,6 +294,7 @@ function gameLoop() {
     checkScore();
 }
 
+// Function to prevent default behaviour of touch
 window.addEventListener("touchmove", preventBehaviour, {passive: false});
 
 function preventBehaviour(e){
