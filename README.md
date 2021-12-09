@@ -219,3 +219,8 @@ The live link can be found here - [Classic Pong!](https://legenduzair.github.io/
   - [Looka](https://looka.com/logo-maker/) was used to create the logo of the game.
   - [Favicon Converter](https://favicon.io/favicon-converter/) was used to create a favicon for the project.
 
+### Special Thanks
+
+  - [Richard Wells](https://github.com/D0nni387) - My Code Institute mentor who supplied me with many sources to help with developing my project and generally gave me advice on how to implement simple and advanced features. Richard was a huge motivation in encouraging me to go above and beyond of what I thought I could achieve with this project. 
+  - The Code Institute Slack community - The very helpful community that responded to my coding queries quickly and as efficiently as possible. 
+
