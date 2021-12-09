@@ -299,7 +299,7 @@ window.addEventListener("touchmove", preventBehaviour, {passive: false});
 
 function preventBehaviour(e){
     e.preventDefault();
-};
+}
 
 // Event listeners for interactive buttons
 button.addEventListener('click', () => {
