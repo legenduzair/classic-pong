@@ -162,7 +162,7 @@ During and after development of Classic Pong, I encountered many bugs which need
 
     - For the deployed project, I generated a lighthouse report through Google Chrome's developer tools for both desktop and mobile versions.
 
-      - Desktop Report:  
+      - Desktop Report:
 
       ![Desktop Lighthouse Report](/documentation/screenshots/classicpong-lighthouse-desktop.png)
 
