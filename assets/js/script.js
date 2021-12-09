@@ -46,7 +46,7 @@ const ball = {
     x: canvas.width/2,
     y: canvas.height/2,
     radius: 15,
-    speed: 7,
+    speed: 8,
     velocityX: 5,
     velocityY: 5,
     color: '#A4243B',
@@ -231,7 +231,7 @@ function movePlayerDown() {
 function resetBall() {
     ball.x = canvas.width/2;
     ball.y = canvas.height/2;
-    ball.speed = 7;
+    ball.speed = 8;
     ball.velocityX = -ball.velocityX;
     ball.velocityY = -ball.velocityY;
 }
