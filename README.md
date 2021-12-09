@@ -155,6 +155,47 @@ During and after development of Classic Pong, I encountered many bugs which need
       - [CSS Code Check](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flegenduzair.github.io%2Fclassic-pong%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
   - Javascript
-    - No errors were displayed when running the Javascript code through JS Hint (Javascript Code Quality Tool).
+    - No errors were displayed when running the JavaScript code through JS Hint (Javascript Code Quality Tool).
       - [Link to JS Hint](https://jshint.com/)
-      
+
+  - Lighthouse 
+
+    - For the deployed project, I generated a lighthouse report through Google Chrome's developer tools for both desktop and mobile versions.
+
+      - Desktop Report:  
+
+      ![Desktop Lighthouse Report](/documentation/screenshots/classicpong-lighthouse-desktop.png)
+
+      - Mobile Report:
+
+      ![Mobile Lighthouse Report](/documentation/screenshots/classicpong-lighthouse-mobile.png)
+
+## Technologies Used
+  
+- Languages
+
+  - HTML
+  - CSS
+  - JavaScript
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follow:
+  - In the GitHub repository, navigate to the settings tab.
+  - On the left, select pages from the settings options.
+  - From the source section drop-down menu, select Branch and then Main.
+  - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - [Classic Pong!](https://legenduzair.github.io/classic-pong/)
+
+## Credits
+
+### Content
+
+### Media
+
+  - [Google Fonts](https://fonts.google.com/) was used for the fonts implemented in the project.
+  - [Coolors](https://coolors.co/) was used to choose the color scheme for the project.
+  - [Looka](https://looka.com/logo-maker/) was used to create the logo of the game.
+  - [Favicon Converter](https://favicon.io/favicon-converter/) was used to create a favicon for the project.
+
