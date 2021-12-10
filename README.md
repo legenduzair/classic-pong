@@ -186,6 +186,8 @@ During and after development of Classic Pong, I encountered many bugs which need
 
       ![Mobile Lighthouse Report](/documentation/screenshots/classicpong-lighthouse-mobile.png)
 
+    - For the mobile report generated, in the best practices section there was an issue that flagged up with the regards to the resolution of the logo used on the title screen. I can confirm that this is a design choice and fits the retro style theme of the game and it does not alter the functionality or appearance of the project.
+
 ## Technologies Used
   
 - Languages
