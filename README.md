@@ -108,6 +108,7 @@ Ongoing improvements and developments are vital to any project and their success
   - Visually improve graphics of the ping pong game, making the canvas appear more stylish.
   - Implement audio to the game when user or computer hits the ball or when either player scores. 
   - Polish up touch controls on mobile either by improving current controls or adding a controller buttons for the user to press.
+  - Add modals in the form of buttons to guide the user on the rules of Classic Pong and how to control the paddle using arrow keys and touch.
 
 ## Testing
 
