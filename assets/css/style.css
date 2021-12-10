@@ -23,7 +23,7 @@ body {
     padding: 20px 10px;
     background-color: #A4243B;
     border: none;
-    color: #183642;
+    color: #F3F8F2;
     text-align: center;
     font-size: 2rem;
     text-decoration: none;
@@ -31,7 +31,7 @@ body {
 }
 
 #button:hover {
-    color: #F3F8F2;
+    color: #183642;
 }
 
 /* Main Game Board */
@@ -39,7 +39,7 @@ body {
     padding: 20px 10px;
     background-color: #A4243B;
     border: none;
-    color: #183642;
+    color: #F3F8F2;
     text-align: center;
     font-size: 2rem;
     text-decoration: none;
@@ -47,7 +47,7 @@ body {
 }
 
 #home:hover {
-    color: #F3F8F2;
+    color: #183642;
 }
 
 #main-game {
@@ -75,7 +75,7 @@ canvas {
     padding: 20px 10px;
     background-color: #A4243B;
     border: none;
-    color: #183642;
+    color: #F3F8F2;
     text-align: center;
     font-size: 2rem;
     text-decoration: none;
@@ -83,7 +83,7 @@ canvas {
 }
 
 #button-two:hover {
-    color: #F3F8F2;
+    color: #183642;
 }
 
 .hide {
