@@ -1,7 +1,7 @@
 # Classic Pong!
 ## Introduction
 
-Classic Pong is a fully responsive project that utilises HTML, CSS and Javascript to create an alternate version of the 2d old school classic 'ping-pong'. This game will allow the user to play against the computer by operating the paddle with keys on desktop or using touch controls on mobile and tablets. To win the game, the user will defeat the computer by deflecting the ball off their paddle and bypass the computer's paddle to reach the high score. If there is a rally between the user and the computer, the difficulty of the game increases as it is hastened. This will allow the user to make quicker decisions and force them to react faster. Classic Pong is targetted at an audience of all ages and interests who want to have fun and enjoy playing a classic ping pong game that is functional. 
+Classic Pong is a fully responsive project that utilises HTML, CSS and JavaScript to create an alternate version of the 2d old school classic 'ping-pong'. This game will allow the user to play against the computer by operating the paddle with keys on desktop or using touch controls on mobile and tablets. To win the game, the user will defeat the computer by deflecting the ball off their paddle and bypass the computer's paddle to reach the high score. If there is a rally between the user and the computer, the difficulty of the game increases as it is hastened. This will allow the user to make quicker decisions and force them to react faster. Classic Pong is targeted at an audience of all ages and interests who want to have fun and enjoy playing a classic ping pong game that is functional. 
 
 ![Responsive Screenshot Markup](/documentation/screenshots/responsive-screenshot.png)
 
@@ -9,7 +9,7 @@ Classic Pong is a fully responsive project that utilises HTML, CSS and Javascrip
 
 ## UX & Planning
 
-Before initiating the project, I planned the layout and structure of the game across multiple screens using Balsamiq Wireframes. During the project, I also produced handwritten notes and calculations to help me understand the logic of the game and develop my knowledge of Javascript at its core. The wireframes and handwritten notes designed are listed below.
+Before initiating the project, I planned the layout and structure of the game across multiple screens using Balsamiq Wireframes. During the project, I also produced handwritten notes and calculations to help me understand the logic of the game and develop my knowledge of JavaScript at its core. The wireframes and handwritten notes designed are listed below.
 
 ### Wireframes
 - Desktop View
@@ -96,7 +96,7 @@ When designing Classic Pong, I felt like a retro style font would fit the theme 
 
 ### Controls 
 
-  - The project has a variety of controls that can be used to make the game more acessible for the user. When playing Classic Pong on devices with keyboards, the up and down arrow key and can be used to control the user's paddle. 
+  - The project has a variety of controls that can be used to make the game more accessible for the user. When playing Classic Pong on devices with keyboards, the up and down arrow key and can be used to control the user's paddle. 
   - When playing Classic Pong on devices that do not have keyboards but rely on touch instead, the user will be able to control the paddle by touching the game board and swiping up and down on medium screens.
   - Due to landscape orientation on smaller screen sizes, the user will be able to control the paddle by touching the game board and swiping right and left. The interactive buttons on the project are also accessible by touch on touchscreen supported devices. 
 
@@ -107,11 +107,11 @@ Ongoing improvements and developments are vital to any project and their success
   - Integrate increasing difficulty levels if the user has beaten the computer each stage rather than game being over after one level.
   - Visually improve graphics of the ping pong game, making the canvas appear more stylish.
   - Implement audio to the game when user or computer hits the ball or when either player scores. 
-  - Polish up touch controls on mobile either by improving current conrols or adding a controller buttons for the user to press.
+  - Polish up touch controls on mobile either by improving current controls or adding a controller buttons for the user to press.
 
 ## Testing
 
-During the development of Classic Pong, the project went through rigorous testing to ensure a fully responsive and functional game was created across all screen sizes. To accomplish this, I used Google Chrome's Developer Tools to continuously test the game when applying styling, adjusting HTML and Javascript codes using a live server window. If any errors occured in the console, these would be seen to immediately to make sure the project would function properly. Many browsers and devices with varied screen sizes were used to test the responsiveness and amend the design of the game to fit all viewports. 
+During the development of Classic Pong, the project went through rigorous testing to ensure a fully responsive and functional game was created across all screen sizes. To accomplish this, I used Google Chrome's Developer Tools to continuously test the game when applying styling, adjusting HTML and JavaScript codes using a live server window. If any errors occurred in the console, these would be seen to immediately to make sure the project would function properly. Many browsers and devices with varied screen sizes were used to test the responsiveness and amend the design of the game to fit all viewports. 
 
 To ensure cross-compatibility, I tested the project on four different browsers during and after development:
   
@@ -120,7 +120,7 @@ To ensure cross-compatibility, I tested the project on four different browsers d
   - Microsoft Edge
   - iOS Safari
 
-After developing the game for desktop screens (1920 x 1080 pixels), I further examined it on different devices to ensure full responsiveness was acquired. On medium sized screens (laptop/tablet), the layout of the game was the same but the scale of the content was reduced to fit the respective viewport size. I achieved responsiveness on small sized screens (small & large mobiles) by forcing the orientation of the screen to portray as landscape. This landscape orientation is present on devices that are 600 pixels or lower in width. Following this procedure, I manually tested the game on different mobile devices such as iPhone 11 Pro Max, IPhone 5/SE and a few Android phones that my family & friends own. Classic Pong was also tested on the iPad Air, iPad Pro and the HP EliteBook 840 G4 for examination on medium sized screens. However just to note that on some mobile Android viewports that I did not test on, the positioning of the content on each screen is adjusted slightly. This is because my personal iPhone 11 Pro Max and iPhone 5/SE were initially used to test the game for mobiles and that the viewport height of these devices are different to other Android phones that I did not test on. If the positioning is adjusted on some viewports, this will also cause an impact on the layout of the content on other devices too due to the game operating in landscape mode. This does not affect the functionality of the game as all the features are accessible. 
+After developing the game for desktop screens (1920 x 1080 pixels), I further examined it on different devices to ensure full responsiveness was acquired. On medium sized screens (laptop/tablet), the layout of the game was the same but the scale of the content was reduced to fit the respective viewport size. I achieved responsiveness on small sized screens (small & large mobiles) by forcing the orientation of the screen to portray as landscape. This landscape orientation is present on devices that are 600 pixels or lower in width. Following this procedure, I manually tested the game on different mobile devices such as iPhone 11 Pro Max, iPhone 5/SE and a few Android phones that my family & friends own. Classic Pong was also tested on the iPad Air, iPad Pro and the HP EliteBook 840 G4 for examination on medium sized screens. However just to note that on some mobile Android viewports that I did not test on, the positioning of the content on each screen is adjusted slightly. This is because my personal iPhone 11 Pro Max and iPhone 5/SE were initially used to test the game for mobiles and that the viewport height of these devices are different to other Android phones that I did not test on. If the positioning is adjusted on some viewports, this will also cause an impact on the layout of the content on other devices too due to the game operating in landscape mode. This does not affect the functionality of the game as all the features are accessible. 
 
 ## Bugs
 
@@ -170,8 +170,8 @@ During and after development of Classic Pong, I encountered many bugs which need
     - No errors were displayed when running the CSS code through the official (Jigsaw) validator.
       - [CSS Code Check](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flegenduzair.github.io%2Fclassic-pong%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-  - Javascript
-    - No errors were displayed when running the JavaScript code through JS Hint (Javascript Code Quality Tool).
+  - JavaScript
+    - No errors were displayed when running the JavaScript code through JS Hint (JavaScript Code Quality Tool).
       - [Link to JS Hint](https://jshint.com/)
 
   - Lighthouse 
@@ -214,9 +214,9 @@ The live link can be found here - [Classic Pong!](https://legenduzair.github.io/
 
 ### Content
 
-  - Classic Pong was inspired by two tutorials; [The Coding Pie](https://thecodingpie.com/post/learn-to-code-ping-pong-game-using-javascript-and-html5) and [Code Explained's youtube video](https://www.youtube.com/watch?v=nl0KXCa5pJk). The project may contain few similarities however I have tried to deviate from their codes as much as I could whilst adding additional features to my project.
-  - Before initiating the development of Classic Pong, I researched the HTML canvas element and how it can be utilised in CSS and JavaScript. This was self-taught by watching [Traversy Media's youtube video](https://www.youtube.com/watch?v=gm1QtePAYTM) and applying it to my own code.
-  - [MDN Web Docs](https://developer.mozilla.org/en-US/) was used to implement touch controls and keybinds to operate the user paddle.
+  - Classic Pong was inspired by two tutorials; [The Coding Pie](https://thecodingpie.com/post/learn-to-code-ping-pong-game-using-javascript-and-html5) and [Code Explained's YouTube video](https://www.youtube.com/watch?v=nl0KXCa5pJk). The project may contain few similarities however I have tried to deviate from their codes as much as I could whilst adding additional features to my project.
+  - Before initiating the development of Classic Pong, I researched the HTML canvas element and how it can be utilised in CSS and JavaScript. This was self-taught by watching [Traversy Media's YouTube video](https://www.youtube.com/watch?v=gm1QtePAYTM) and applying it to my own code.
+  - [MDN Web Docs](https://developer.mozilla.org/en-US/) was used to implement touch controls and key binds to operate the user paddle.
   - To understand trigonometry and the radians calculation for the ball collision aspect of the code, I used two websites; [Maths Is Fun](https://www.mathsisfun.com/geometry/radians.html) and [Khan Academy](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:trig/x9e81a4f98389efdf:trig-id/v/trigonometry-unit-circle-symmetry)
   - To convert pixels to rem, I utilised [Ninja Units Converter](https://www.ninjaunits.com/converters/pixels/pixels-rem/).
 
