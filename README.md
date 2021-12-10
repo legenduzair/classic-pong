@@ -34,8 +34,8 @@ Before initiating the project, I planned the layout and structure of the game ac
 ## Color Scheme
 
 For the general color scheme of the project, I went with a smoky blue background with a bright red/pink color for the content structured on the various screens. When hovered over, the interactive buttons all light up white which fit the pink color of the buttons. This theme makes the project appear stylish and easily visible to the user as the foreground content stands out from the background. For the canvas, I used a plain black background with majority of the objects being white and the ball being the bright red/pink color used before on different screens. This allows the user to view the canvas properly when playing the game and does not distract them from colors that are blinding to the human eye. These colors were chosen from one source called [Coolors](https://coolors.co/). Hex values were used when inputting the colors in the CSS file. 
-  - Background color: #183642
-  - Headings, buttons and ball color: #A4243B
+  - Background color: #0D1F26
+  - Headings, buttons and ball color: #D41335
   - Canvas color: #0B0500
   - Button text and game objects color: #F3F8F2
 
@@ -176,7 +176,7 @@ During and after development of Classic Pong, I encountered many bugs which need
 
   - Lighthouse 
 
-    - For the deployed project, I generated a lighthouse report through Google Chrome's developer tools for both desktop and mobile versions.
+    - For the deployed project, I generated a lighthouse report through Google Chrome's developer tools for both desktop and mobile versions. For both reports, lighthouse presented an issue with the foreground and background colors not having enough contrast which would allow some users to be distracted. To resolve this, different shades of the background and foreground color were used. Initially, hex values #183642 and #A4243B were used but were changed to #0D1F26 and #D41335. An updated report was generated.
 
       - Desktop Report:
 
