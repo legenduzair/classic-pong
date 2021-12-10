@@ -1,8 +1,8 @@
 /* Global Style */
 body {
-    background-color: #183642;
+    background-color: #0D1F26;
     font-family: 'Press Start 2P', cursive;
-    color: #A4243B;
+    color: #D41335;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 #button {
     padding: 20px 10px;
-    background-color: #A4243B;
+    background-color: #D41335;
     border: none;
     color: #F3F8F2;
     text-align: center;
@@ -31,13 +31,13 @@ body {
 }
 
 #button:hover {
-    color: #183642;
+    color: #0D1F26;
 }
 
 /* Main Game Board */
 #home {
     padding: 20px 10px;
-    background-color: #A4243B;
+    background-color: #D41335;
     border: none;
     color: #F3F8F2;
     text-align: center;
@@ -47,7 +47,7 @@ body {
 }
 
 #home:hover {
-    color: #183642;
+    color: #0D1F26;
 }
 
 #main-game {
@@ -73,7 +73,7 @@ canvas {
 
 #button-two {
     padding: 20px 10px;
-    background-color: #A4243B;
+    background-color: #D41335;
     border: none;
     color: #F3F8F2;
     text-align: center;
@@ -83,7 +83,7 @@ canvas {
 }
 
 #button-two:hover {
-    color: #183642;
+    color: #0D1F26;
 }
 
 .hide {

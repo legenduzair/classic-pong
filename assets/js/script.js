@@ -49,7 +49,7 @@ const ball = {
     speed: 8,
     velocityX: 5,
     velocityY: 5,
-    color: '#A4243B',
+    color: '#D41335',
 };
 
 // Functions to draw the objects
