@@ -9,18 +9,18 @@ body {
 /* Heading */
 .heading {
     font-size: 2rem;
-    height: 250px;
-    margin: 100px;
+    height: 15.625rem;
+    margin: 6.25rem;
     /* display: none; */
 }
 
 /* Button */
 #button-section {
-    height: 100px;
+    height: 6.25rem;
     /* display: none; */
 }
 #button {
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     background-color: #D41335;
     border: none;
     color: #F3F8F2;
@@ -36,7 +36,7 @@ body {
 
 /* Main Game Board */
 #home {
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     background-color: #D41335;
     border: none;
     color: #F3F8F2;
@@ -72,7 +72,7 @@ canvas {
 } */
 
 #button-two {
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
     background-color: #D41335;
     border: none;
     color: #F3F8F2;
@@ -104,18 +104,18 @@ canvas {
 
 @media only screen and (max-width: 1050px ) {
     #button-section {
-        padding-top: 100px;
+        padding-top: 6.25rem;
     }
     #title-screen {
-        padding-top: 100px;
+        padding-top: 6.25rem;
     }
     .heading {
         margin: 0;
-        height: 250px;
+        height: 15.625rem;
     }
     #game-over {
-        margin: 100px;
-        height: 120px;
+        margin: 6.25rem;
+        height: 7.5rem;
     }
 }
 
@@ -136,7 +136,7 @@ canvas {
         font-size: 1.07rem;
     }
     #button-section {
-        padding-top: 65px;
+        padding-top: 4.0625rem;
     }
     #button {
         font-size: 1.3rem;
@@ -149,9 +149,9 @@ canvas {
 @media only screen and (max-width: 650px ) {
     #game-over {
         margin: 0;
-        margin-top: 100px;
+        margin-top: 6.25rem;
         font-size: 1.4rem;
-        height: 220px;
+        height: 13.75rem;
     }
     #button-two {
         font-size: 1.4rem;
@@ -163,7 +163,7 @@ canvas {
         font-size: 1rem;
     }
     #button-section {
-        padding-top: 50px;
+        padding-top: 3.125rem;
     }
     #button {
         font-size: 1rem;
@@ -177,34 +177,34 @@ canvas {
     #first-div {
         display: flex;
         flex-direction: column;
-        width: 950px;
+        width: 59.375rem;
         justify-content: center;
     }
     #title-screen {
-        padding: 20px;
+        padding: 1.25rem;
     }
     #second-div {
     display: flex;
     flex-direction: column;
-    width: 550px;
+    width: 34.375rem;
     align-items: center;
     }
     canvas {
         width: 120%;
         position: absolute;
-        left: 15px;
-        top: 30px;
+        left: 0.9375rem;
+        top: 1.875rem;
     }
     #home-button {
-        height: 200px;
+        height: 12.5rem;
         position: relative;
-        bottom: 60px;
-        left: 100px;
+        bottom: 3.75rem;
+        left: 6.25rem;
     }
     #third-div {
         display: flex;
         flex-direction: column;
-        width: 950px;
+        width: 59.375rem;
         justify-content: center;
     }
 }
@@ -212,31 +212,31 @@ canvas {
 @media only screen and (max-width: 550px ) {
     #home-button {
         position: relative;
-        bottom: 60px;
-        left: 60px;
+        bottom: 3.75rem;
+        left: 3.75rem;
     }
 }
 
 @media only screen and (max-width: 500px ) {
     #first-div {
-        width: 800px;
+        width: 50rem;
     }
     /* #third-div {
         width: 800px;
     } */
     #home-button {
         position: relative;
-        bottom: 130px;
-        left: 30px;
+        bottom: 8.125rem;
+        left: 1.875rem;
     }
 }
 
 @media only screen and (max-width: 440px ) {
     canvas {
         position: absolute;
-        left: 300px;
+        left: 18.75rem;
         width: 100%;
-        top: -85px;
+        top: -5.3125rem;
     }
     /* #second-div {
         height: 400px;
@@ -248,8 +248,8 @@ canvas {
     }
     #home-button {
         position: relative;
-        top: 240px;
-        left: 230px;
+        top: 15rem;
+        left: 14.375rem;
     }
 }
 @media only screen and (max-width: 432px ) {
@@ -257,55 +257,55 @@ canvas {
         font-size: 0.7rem;
     }
     h1 {
-        padding-top: 30px;
+        padding-top: 1.875rem;
     }
     #button-section {
         padding-top: 0;
     }
     #game-over {
-        margin-top: 0px;
+        margin-top: 0rem;
     }
 }
 
 @media only screen and (max-width: 375px) {
     #home-button {
         position: relative;
-        top: 225px;
-        left: 210px;
+        top: 14.0625rem;
+        left: 13.125rem;
     }
     canvas {
         position: absolute;
-        left: 300px;
+        left: 18.75rem;
         width: 100%;
-        top: -60px;
+        top: -3.75rem;
     }
 }
 
 @media only screen and (max-width: 320px ) {
     #first-div {
-        width: 450px;
+        width: 28.125rem;
     }
     #third-div {
-        width: 530px;
+        width: 33.125rem;
     }
     canvas {
         position: absolute;
-        left: 150px;
+        left: 9.375rem;
         width: 100%;
-        top: -45px;
+        top: -2.8125rem;
     }
     #home-button {
         position: relative;
-        top: 210px;
-        left: 30px;
+        top: 13.125rem;
+        left: 1.875rem;
     }
     #title-screen {
-        padding: 6px;
+        padding: 0.375rem;
     }
     h1 {
-        padding-top: 50px;
+        padding-top: 3.125rem;
     }
     img {
-        padding-top: 20px;
+        padding-top: 1.25rem;
     }
 }
