@@ -62,16 +62,6 @@ function drawNet() {
     ctx.fillRect(net.x, net.y, net.width, net.height);
 }
 
-// function drawUserPaddle() {
-//     ctx.fillStyle = user.color;
-//     ctx.fillRect(user.x, user.y, user.width, user.height);
-// }
-
-// function drawAiPaddle() {
-//     ctx.fillStyle = ai.color;
-//     ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
-// }
-
 function drawPaddle(target) {
     ctx.fillStyle = target.color;
     ctx.fillRect(target.x, target.y, target.width, target.height);
@@ -278,8 +268,6 @@ function gameOver() {
 function render() {
     drawBoard();
     drawNet();
-    // drawUserPaddle();
-    // drawAiPaddle();
     drawPaddle(user);
     drawPaddle(ai);
     drawUserScore(canvas.width/4, canvas.height/10, user.score);
