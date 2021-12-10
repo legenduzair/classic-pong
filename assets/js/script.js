@@ -62,6 +62,10 @@ function drawNet() {
     ctx.fillRect(net.x, net.y, net.width, net.height);
 }
 
+/**
+ * 
+ * @param {target} target - User and Ai Paddle
+ */
 function drawPaddle(target) {
     ctx.fillStyle = target.color;
     ctx.fillRect(target.x, target.y, target.width, target.height);
