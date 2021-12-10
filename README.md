@@ -41,7 +41,7 @@ For the general color scheme of the project, I went with a smoky blue background
 
 ## Typography
 
-When designing Classic Pong, I felt like a retro style font would fit the theme of the game and therefore picked 'Press Start 2P' from [Google Fonts](https://fonts.google.com/). This corresponded with the minimalistic and classic feel the game portrayed. 
+When designing Classic Pong, I felt like a retro style font would fit the theme of the game and therefore picked 'Press Start 2P' from [Google Fonts](https://fonts.google.com/specimen/Press+Start+2P?query=press+start). This corresponded with the minimalistic and classic feel the game portrayed. 
 
 ## Features 
 
