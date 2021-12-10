@@ -218,6 +218,7 @@ The live link can be found here - [Classic Pong!](https://legenduzair.github.io/
   - Before initiating the development of Classic Pong, I researched the HTML canvas element and how it can be utilised in CSS and JavaScript. This was self-taught by watching [Traversy Media's youtube video](https://www.youtube.com/watch?v=gm1QtePAYTM) and applying it to my own code.
   - [MDN Web Docs](https://developer.mozilla.org/en-US/) was used to implement touch controls and keybinds to operate the user paddle.
   - To understand trigonometry and the radians calculation for the ball collision aspect of the code, I used two websites; [Maths Is Fun](https://www.mathsisfun.com/geometry/radians.html) and [Khan Academy](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:trig/x9e81a4f98389efdf:trig-id/v/trigonometry-unit-circle-symmetry)
+  - To convert pixels to rem, I utilised [Ninja Units Converter](https://www.ninjaunits.com/converters/pixels/pixels-rem/).
 
 ### Media
 
