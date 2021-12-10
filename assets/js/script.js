@@ -165,27 +165,21 @@ function keyUpHandler(event) {
 
 // Function that includes all of the calculations created to operate the game 
 function update() {
-
-// To move the user paddle
     if (upArrowKey && user.y > 0) {
         movePlayerUp();
     } else if (downArrowKey && (user.y < canvas.height - user.height)) {
         movePlayerDown();
     }
-
-// To move the AI paddle
     let aiSpeed = 0.09;
     ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
 
     ball.x += ball.velocityX;
     ball.y += ball.velocityY; 
 
-// To operate collision of the ball with the top and bottom walls
+// To operate collision of the ball with the top, bottom, right and left walls
     if(ball.y + ball.radius >= canvas.height || ball.y - ball.radius <= 0) {
     ball.velocityY = -ball.velocityY;
     }
-
-// To operate collision of the ball with the right and left walls
     if(ball.x + ball.radius >= canvas.width) {
     user.score++;
     resetBall();
@@ -196,6 +190,7 @@ function update() {
 
 // To determine whether the player is the user or ai
     let player = (ball.x < canvas.width/2) ? user : ai;
+
 // Angle generated depending on which half of the paddle the ball has hit
     if (collisionDetection(ball, player)) {
     let angle = 0;
@@ -248,6 +243,7 @@ function resetGame() {
     ai.x = canvas.width - (20+10);
     ai.y = canvas.height/2 - 150/2;
 }
+
 // Function to detect collision of ball with user and ai paddles
 function collisionDetection(ball, player){
     player.top = player.y;
