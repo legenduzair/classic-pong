@@ -11,14 +11,7 @@ const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
 const buttonTwo = document.getElementById('button-two');
 const highScore = 3;
-
 const userSpeed = 9;
-let touchY = 0;
-let upArrowKey = false;
-let downArrowKey = false;
-let framePerSecond = 60;
-let gameLoopInterval;
-
 const net = {
     x: canvas.width/2 - 6/2,
     y: 0,
@@ -52,8 +45,13 @@ const ball = {
     color: '#D41335',
 };
 
-// Functions to draw the objects
+let touchY = 0;
+let upArrowKey = false;
+let downArrowKey = false;
+let framePerSecond = 60;
+let gameLoopInterval;
 
+// Functions to draw the objects
 function drawBoard() {
     ctx.fillStyle = '#0B0500';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -116,7 +114,6 @@ function drawBall(x, y, radius, color) {
 /* Paddle Movement */
 window.addEventListener('keydown', keyDownHandler);
 window.addEventListener('keyup', keyUpHandler);
-
 window.addEventListener('touchstart', touchStartHandler);
 window.addEventListener('touchmove', touchMoveHandler);
 
