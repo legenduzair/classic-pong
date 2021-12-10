@@ -10,8 +10,8 @@ const homeSection = document.getElementById('home-button');
 const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
 const buttonTwo = document.getElementById('button-two');
-const highScore = 3;
-const userSpeed = 9;
+const highScore = 5;
+const userSpeed = 7;
 const net = {
     x: canvas.width/2 - 6/2,
     y: 0,
@@ -164,7 +164,7 @@ function update() {
     } else if (downArrowKey && (user.y < canvas.height - user.height)) {
         movePlayerDown();
     }
-    let aiSpeed = 0.09;
+    let aiSpeed = 0.07;
     ai.y += ((ball.y - (ai.y + ai.height/2))) * aiSpeed;
 
     ball.x += ball.velocityX;
