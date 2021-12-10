@@ -10,7 +10,7 @@ const homeSection = document.getElementById('home-button');
 const gameFinish = document.getElementById('game-over');
 const playAgain = document.getElementById('play-again');
 const buttonTwo = document.getElementById('button-two');
-const highScore = 5;
+const highScore = 1;
 const userSpeed = 7;
 const net = {
     x: canvas.width/2 - 6/2,

@@ -254,13 +254,19 @@ canvas {
     #home-button {
         position: relative;
         top: 14.0625rem;
-        left: 13.125rem;
+        left: 6.125rem;
     }
     canvas {
         position: absolute;
-        left: 18.75rem;
+        left: 12.75rem;
         width: 100%;
         top: -3.75rem;
+    }
+    #first-div {
+        width: 35rem;
+    }
+    #third-div {
+        width: 42.375rem;
     }
 }
 
